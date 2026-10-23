@@ -521,7 +521,7 @@ The author thanks the ECOS development community for infrastructure support.
 
 ## Appendix A: Data Availability
 
-All code, data, and results are available at the ECOS-FSRS GitHub repository (link to be provided upon acceptance). The simulation environment is built on the ECOS framework; configuration files and random seeds are included for reproducibility.
+All code, data, and results are available in the replication pack archived on Zenodo: https://doi.org/10.5281/zenodo.23594010 (version DOI for v48; concept DOI: https://doi.org/10.5281/zenodo.23594009). The living repository is https://github.com/caiminqian/JEDC-FSRS-replication. The simulation environment is built on the ECOS framework; configuration files and random seeds are included for reproducibility.
 
 
 ## Appendix B: References
