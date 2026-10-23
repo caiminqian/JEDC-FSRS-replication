@@ -85,11 +85,19 @@ class ECOSControlEnv(gym.Env):
         perceived_R = {}
         R_vals = []
         for a in self.agents:
-            nbrs = list(self.world.graph.predecessors(a.agent_id))
+            # Handle case where agent node may not be present in graph (e.g., test overrides)
+            if self.world.graph.has_node(a.agent_id):
+                nbrs = list(self.world.graph.predecessors(a.agent_id))
+            else:
+                nbrs = []
             nbr_R = [true_R.get(n, 0.5) for n in nbrs if n in true_R]
-            pR = (1 - self.gov.contagion_alpha) * true_R[a.agent_id]
             if nbr_R:
+                # Has predecessors: apply contagion blending
+                pR = (1 - self.gov.contagion_alpha) * true_R[a.agent_id]
                 pR += self.gov.contagion_alpha * np.mean(nbr_R)
+            else:
+                # No predecessors: perceived risk equals true risk exactly
+                pR = true_R[a.agent_id]
             perceived_R[a.agent_id] = pR
             R_vals.append(pR)
 
