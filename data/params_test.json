@@ -1,0 +1,18 @@
+{
+  "calibration_date": "2026-04-16T12:16:21.669754+00:00",
+  "method": "grid_search",
+  "events": [
+    "2020",
+    "2008"
+  ],
+  "parameters": {
+    "S_initial": 30,
+    "severity_crisis": 1.0,
+    "alpha": 0.4,
+    "S_recovery": 10.0,
+    "severity_correction": 0.5,
+    "difficulty_factor": 1.0
+  },
+  "best_loss": 0.6434170682646008,
+  "n_agents_simulated": "analytical"
+}

@@ -1,0 +1,960 @@
+{
+  "ticks": 500,
+  "agents_total": 100,
+  "agents_by_engine": {
+    "fsrs": 55,
+    "sm20": 45
+  },
+  "time_series": [
+    {
+      "tick": 10,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.9088589585850589,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 2.7316797868838676,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.8187307932225796,
+        "avg_S": 45.0,
+        "avg_leverage": 2.6314228609967785,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 20,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.8767031404399309,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 3.3426403316413165,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.6555883690530666,
+        "avg_S": 45.0,
+        "avg_leverage": 4.099704678522399,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 30,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.8569660652680671,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 3.7176447599067153,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.5249541280180188,
+        "avg_S": 45.0,
+        "avg_leverage": 5.275412847837836,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 40,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.842697775138198,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 3.988742272374216,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.420350405119606,
+        "avg_S": 45.0,
+        "avg_leverage": 6.216846353923545,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 50,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.831539029907282,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 4.200758431761632,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.33659029171050125,
+        "avg_S": 45.0,
+        "avg_leverage": 6.970687374605493,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 60,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.8223900590616798,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 4.374588877828081,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.2695204360312775,
+        "avg_S": 45.0,
+        "avg_leverage": 7.574316075718508,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 70,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.8146469210202198,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 4.521708500615811,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.21581509398069096,
+        "avg_S": 45.0,
+        "avg_leverage": 8.05766415417378,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 80,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.8079419072277142,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 4.64910376267341,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.1728112178643454,
+        "avg_S": 45.0,
+        "avg_leverage": 8.444699039220898,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 90,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.8020344750716085,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 4.76134497363945,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.13837640578758673,
+        "avg_S": 45.0,
+        "avg_leverage": 8.754612347911717,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 100,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7967586822788778,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 4.861585036701302,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.1108031637953144,
+        "avg_S": 45.0,
+        "avg_leverage": 9.002771525842178,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 110,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7919952542790055,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 4.952090168698879,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.08872423761242568,
+        "avg_S": 45.0,
+        "avg_leverage": 9.20148186148817,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 120,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7876556081516827,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.0345434451180155,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.07104481560154768,
+        "avg_S": 45.0,
+        "avg_leverage": 9.360596659586076,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 130,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7836721727291812,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.110228718145566,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.056888241135486795,
+        "avg_S": 45.0,
+        "avg_leverage": 9.488005829780619,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 140,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7799922440948577,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.180147362197702,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.045552542463334775,
+        "avg_S": 45.0,
+        "avg_leverage": 9.590027117829994,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 150,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7765739324411477,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.245095283618214,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.03647562454834833,
+        "avg_S": 45.0,
+        "avg_leverage": 9.671719379064871,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 160,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7733834006875916,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.305715386935738,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.029207396870613002,
+        "avg_S": 45.0,
+        "avg_leverage": 9.737133428164492,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 170,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7703929305974168,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.362534318649086,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.023387455116135172,
+        "avg_S": 45.0,
+        "avg_leverage": 9.78951290395479,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 180,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7675795357904801,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.415988819980861,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0187272100705275,
+        "avg_S": 45.0,
+        "avg_leverage": 9.831455109365242,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 190,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7649239461065639,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.4664450239753,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.014995577555751656,
+        "avg_S": 45.0,
+        "avg_leverage": 9.865039801998247,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 200,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7624098501579069,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.514212846999762,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.012007519827230176,
+        "avg_S": 45.0,
+        "avg_leverage": 9.891932321554934,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 210,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7600233211829311,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.559556897524311,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.009614870241928367,
+        "avg_S": 45.0,
+        "avg_leverage": 9.913466167822637,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 220,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7577523754756889,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.602704865961904,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.00769898622690383,
+        "avg_S": 45.0,
+        "avg_leverage": 9.930709123957856,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 230,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7555866283127707,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.643854062057343,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.006164866236423246,
+        "avg_S": 45.0,
+        "avg_leverage": 9.944516203872205,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 240,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7535170226643881,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.683176569376618,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.00493643897948306,
+        "avg_S": 45.0,
+        "avg_leverage": 9.95557204918464,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 250,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7515356129840702,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.720823353302657,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0039527913280885665,
+        "avg_S": 45.0,
+        "avg_leverage": 9.964424878047206,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 260,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7496353911972582,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.756927567252093,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0031651478623257218,
+        "avg_S": 45.0,
+        "avg_leverage": 9.971513669239055,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 270,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7478101453886116,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.791607237616368,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0025344522791263813,
+        "avg_S": 45.0,
+        "avg_leverage": 9.977189929487862,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 280,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7460543440910118,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.8249674622707674,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0020294307358042444,
+        "avg_S": 45.0,
+        "avg_leverage": 9.981735123377765,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 290,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7443630408121568,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.857102224569014,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.001625041096787439,
+        "avg_S": 45.0,
+        "avg_leverage": 9.985374630128929,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 300,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7427317947005764,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.888095900689046,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0013012311874746531,
+        "avg_S": 45.0,
+        "avg_leverage": 9.98828891931273,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 310,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.741156604188654,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.918024520415588,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0010419444816528098,
+        "avg_S": 45.0,
+        "avg_leverage": 9.990622499665124,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 320,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7396338511496755,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.946956828156162,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0008343239182221702,
+        "avg_S": 45.0,
+        "avg_leverage": 9.992491084735992,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 330,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.738160253634096,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 5.97495518095216,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0006680743674685955,
+        "avg_S": 45.0,
+        "avg_leverage": 9.993987330692784,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 340,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7367328256528423,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.002076312596007,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0005349521339620925,
+        "avg_S": 45.0,
+        "avg_leverage": 9.995185430794338,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 350,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7353488427851738,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.028371987081723,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.00042835618243361055,
+        "avg_S": 45.0,
+        "avg_leverage": 9.996144794358088,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 360,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7340058126288738,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.0538895600513785,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.00034300081704524775,
+        "avg_S": 45.0,
+        "avg_leverage": 9.996912992646598,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 370,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7327014492982771,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.07867246333275,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0002746535834391551,
+        "avg_S": 45.0,
+        "avg_leverage": 9.997528117749038,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 380,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7314336513235151,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.102760624853211,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0002199253971048636,
+        "avg_S": 45.0,
+        "avg_leverage": 9.998020671426055,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 390,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7302004824216773,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.126190833988131,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.00017610249131319618,
+        "avg_S": 45.0,
+        "avg_leverage": 9.99841507757817,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 400,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7290001547040692,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.148997060622692,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.00014101185154130836,
+        "avg_S": 45.0,
+        "avg_leverage": 9.99873089333613,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 410,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7278310139589915,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.171210734779159,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 0.0001129134637836778,
+        "avg_S": 45.0,
+        "avg_leverage": 9.998983778825949,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 420,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7266915267101289,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.192860992507555,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 9.041403374448314e-05,
+        "avg_S": 45.0,
+        "avg_leverage": 9.999186273696292,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 430,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7255802687999596,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.213974892800768,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 7.239789856779013e-05,
+        "avg_S": 45.0,
+        "avg_leverage": 9.999348418912893,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 440,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7244959152878618,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.234577609530643,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 5.7971705275806673e-05,
+        "avg_S": 45.0,
+        "avg_leverage": 9.999478254652509,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 450,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7234372314856395,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.254692601772862,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 4.642011272520814e-05,
+        "avg_S": 45.0,
+        "avg_leverage": 9.999582218985466,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 460,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7224030649804347,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.274341765371766,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 3.7170320506688563e-05,
+        "avg_S": 45.0,
+        "avg_leverage": 9.999665467115443,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 470,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7213923385175415,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.2935455681667225,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 2.9763665908111224e-05,
+        "avg_S": 45.0,
+        "avg_leverage": 9.99973212700682,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 480,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7204040436344498,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.312323170945476,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 2.3832880540544506e-05,
+        "avg_S": 45.0,
+        "avg_leverage": 9.99978550407514,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 490,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7194372349530698,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.330692535891666,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 1.9083878868062148e-05,
+        "avg_S": 45.0,
+        "avg_leverage": 9.9998282450902,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    },
+    {
+      "tick": 500,
+      "fsrs": {
+        "count": 55,
+        "avg_R": 0.7184910250503124,
+        "avg_S": 19.696969696969695,
+        "avg_leverage": 6.3486705240440715,
+        "active_count": 55
+      },
+      "sm20": {
+        "count": 45,
+        "avg_R": 1.528117560239105e-05,
+        "avg_S": 45.0,
+        "avg_leverage": 9.999862469419586,
+        "active_count": 45
+      },
+      "treasury": 1000000.0,
+      "interventions": 0
+    }
+  ]
+}

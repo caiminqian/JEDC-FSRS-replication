@@ -1,0 +1,28 @@
+﻿
+OK 4448 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\core\clock.py
+OK 9121 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\core\event_bus.py
+OK 12422 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\core\metrics.py
+OK 6451 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\core\persistence.py
+OK 7642 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\core\scheduler.py
+OK 9769 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\core\world_state.py
+OK 297 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\core\__init__.py
+OK 16089 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\risk\diffusion.py
+OK 8411 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\risk\liquidity_risk.py
+OK 8545 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\risk\systemic_risk.py
+OK 506 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\risk\__init__.py
+OK 5232 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\central_government.py
+OK 4757 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\chancellery.py
+OK 8126 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\department_ofworks.py
+OK 22095 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\governance_manager.py
+OK 7088 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\secretariat.py
+OK 1596 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\types.py
+OK 578 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\__init__.py
+OK 5283 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\ministries\finance.py
+OK 9058 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\ministries\justice.py
+OK 5910 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\ministries\military.py
+OK 6453 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\ministries\personnel.py
+OK 5697 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\ministries\ritual.py
+OK 5677 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\ministries\works.py
+OK 429 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\ministries\__init__.py
+GENERATED empty C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\control\__init__.py (source had none)
+UPDATED README.md and REPRODUCE.md

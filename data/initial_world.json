@@ -1,0 +1,63 @@
+{
+  "name": "Initial ECOS World",
+  "version": 5,
+  "created_at": "2026-04-16T00:49:20.472220",
+  "nodes": [
+    {
+      "id": "market:BTC",
+      "symbol": "BTC",
+      "price": 66812.55,
+      "change": 0.0,
+      "volume": 1225096.7970040024,
+      "liquidity": 0.6375146591845596,
+      "type": "market",
+      "created_at": "2026-04-16T00:49:20.472220",
+      "version": 0
+    },
+    {
+      "id": "market:ETH",
+      "symbol": "ETH",
+      "price": 3306.25,
+      "change": 0.0,
+      "volume": 7628240.927476112,
+      "liquidity": 0.8383497437114557,
+      "type": "market",
+      "created_at": "2026-04-16T00:49:20.472220",
+      "version": 1
+    },
+    {
+      "id": "market:XMR",
+      "symbol": "XMR",
+      "price": 161.77,
+      "change": 0.0,
+      "volume": 1782449.4936647452,
+      "liquidity": 0.7109609098426353,
+      "type": "market",
+      "created_at": "2026-04-16T00:49:20.472220",
+      "version": 2
+    },
+    {
+      "id": "market:FIL",
+      "symbol": "FIL",
+      "price": 5.89,
+      "change": 0.0,
+      "volume": 2967741.77323243,
+      "liquidity": 0.7526776440516811,
+      "type": "market",
+      "created_at": "2026-04-16T00:49:20.472220",
+      "version": 3
+    },
+    {
+      "id": "market:STORJ",
+      "symbol": "STORJ",
+      "price": 0.27,
+      "change": 0.0,
+      "volume": 2789538.856179836,
+      "liquidity": 0.8249422188897616,
+      "type": "market",
+      "created_at": "2026-04-16T00:49:20.472220",
+      "version": 4
+    }
+  ],
+  "edges": []
+}

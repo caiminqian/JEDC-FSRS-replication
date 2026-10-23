@@ -1,0 +1,27 @@
+{
+  "baseline": {
+    "avg_return": 2196.534773698704,
+    "std_return": 2.9240871817405013e-06,
+    "avg_interventions": 5.0,
+    "avg_crisis": 0.0,
+    "avg_zone_pct": 30.099999999999998,
+    "min_return": 2196.5347702210615,
+    "max_return": 2196.5347773752897
+  },
+  "optimal": {
+    "avg_return": 10402.46519744591,
+    "std_return": 9.91683336913905e-07,
+    "avg_interventions": 15.0,
+    "avg_crisis": 0.0,
+    "avg_zone_pct": 39.60000000000001,
+    "min_return": 10402.465196220615,
+    "max_return": 10402.465198649441
+  },
+  "improvement": 8205.930423747206,
+  "config": {
+    "n_agents": 1000,
+    "max_ticks": 1000,
+    "n_episodes": 3
+  },
+  "timestamp": 1776347585.2692199
+}

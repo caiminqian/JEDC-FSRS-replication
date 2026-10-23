@@ -1,0 +1,212 @@
+{
+  "best_cfg": "thr=0.65,sev=0.80",
+  "best_return": 3676.2925535447894,
+  "baseline_cfg": "thr=0.30,sev=0.60",
+  "baseline_return": null,
+  "all_results": {
+    "thr=0.65,sev=0.20": {
+      "avg_return": 3321.2574484504757,
+      "std_return": 967.9260016178571,
+      "avg_interventions": 0.2,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 43.8
+    },
+    "thr=0.65,sev=0.40": {
+      "avg_return": 3363.1601225495338,
+      "std_return": 998.7236158610303,
+      "avg_interventions": 0.3,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 44.36666666666667
+    },
+    "thr=0.65,sev=0.60": {
+      "avg_return": 3504.816346719861,
+      "std_return": 1141.3484326314579,
+      "avg_interventions": 0.3,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 46.06666666666667
+    },
+    "thr=0.65,sev=0.80": {
+      "avg_return": 3676.2925535447894,
+      "std_return": 1340.6881341233488,
+      "avg_interventions": 1.8,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 48.06666666666667
+    },
+    "thr=0.70,sev=0.20": {
+      "avg_return": -460.0888370655477,
+      "std_return": 111.1374309279493,
+      "avg_interventions": 1.3,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.4333333333333333
+    },
+    "thr=0.70,sev=0.40": {
+      "avg_return": -460.6088370732963,
+      "std_return": 111.27702081597461,
+      "avg_interventions": 1.3,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.4333333333333333
+    },
+    "thr=0.70,sev=0.60": {
+      "avg_return": 52.70130242779849,
+      "std_return": 568.2979631170532,
+      "avg_interventions": 21.2,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 7.2666666666666675
+    },
+    "thr=0.70,sev=0.80": {
+      "avg_return": 445.72399090006945,
+      "std_return": 614.2934220211075,
+      "avg_interventions": 36.1,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 12.166666666666668
+    },
+    "thr=0.75,sev=0.20": {
+      "avg_return": -367.527842079103,
+      "std_return": 117.70003590910845,
+      "avg_interventions": 2.3,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.75,sev=0.40": {
+      "avg_return": -368.44784209281204,
+      "std_return": 117.84490000662534,
+      "avg_interventions": 2.3,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.75,sev=0.60": {
+      "avg_return": -672.9414051957428,
+      "std_return": 223.47076068277312,
+      "avg_interventions": 142.7,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.75,sev=0.80": {
+      "avg_return": -773.3368207767605,
+      "std_return": 245.0380968719912,
+      "avg_interventions": 162.3,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.80,sev=0.20": {
+      "avg_return": -236.44676106274127,
+      "std_return": 128.13968287930626,
+      "avg_interventions": 3.4,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.80,sev=0.40": {
+      "avg_return": -237.80676108300685,
+      "std_return": 128.32195425960063,
+      "avg_interventions": 3.4,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.80,sev=0.60": {
+      "avg_return": -797.632729627192,
+      "std_return": 179.0902185427266,
+      "avg_interventions": 267.3,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.80,sev=0.80": {
+      "avg_return": -932.4200361073017,
+      "std_return": 174.47151596648513,
+      "avg_interventions": 279.5,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.85,sev=0.20": {
+      "avg_return": -124.28747729063048,
+      "std_return": 145.00565050742165,
+      "avg_interventions": 4.4,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.85,sev=0.40": {
+      "avg_return": -126.04747731685652,
+      "std_return": 145.1851033608385,
+      "avg_interventions": 4.4,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.85,sev=0.60": {
+      "avg_return": -831.4626158028841,
+      "std_return": 168.5228216007466,
+      "avg_interventions": 288.6,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.85,sev=0.80": {
+      "avg_return": -958.7262793056667,
+      "std_return": 165.29511511961238,
+      "avg_interventions": 292.6,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.90,sev=0.20": {
+      "avg_return": -26.633087693899892,
+      "std_return": 148.00650560051434,
+      "avg_interventions": 6.2,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.90,sev=0.40": {
+      "avg_return": -29.113087730854772,
+      "std_return": 148.53321437466846,
+      "avg_interventions": 6.2,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.90,sev=0.60": {
+      "avg_return": -847.5019890144467,
+      "std_return": 162.93690517449187,
+      "avg_interventions": 296.6,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.90,sev=0.80": {
+      "avg_return": -970.1214032441378,
+      "std_return": 162.24527485152743,
+      "avg_interventions": 297.2,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.95,sev=0.20": {
+      "avg_return": 24.99701537862419,
+      "std_return": 213.85739540198466,
+      "avg_interventions": 95.3,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.95,sev=0.40": {
+      "avg_return": -13.122985189408078,
+      "std_return": 263.4469906053295,
+      "avg_interventions": 95.3,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.95,sev=0.60": {
+      "avg_return": -852.7491395324469,
+      "std_return": 160.904386261409,
+      "avg_interventions": 298.8,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    },
+    "thr=0.95,sev=0.80": {
+      "avg_return": -974.6511987812817,
+      "std_return": 161.07636515296352,
+      "avg_interventions": 298.8,
+      "avg_crisis": 0.0,
+      "avg_zone_pct": 0.0
+    }
+  },
+  "elapsed_seconds": 248.46552538871765,
+  "timestamp": 1776403841.6258297,
+  "config": {
+    "S_initial": 45,
+    "agents": 30,
+    "ticks": 300,
+    "episodes": 10
+  }
+}

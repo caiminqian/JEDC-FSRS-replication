@@ -1,0 +1,74 @@
+﻿
+DEST C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication
+MAIN C:\Users\Administrator\Desktop\.openclaw\workspace\ziwei\workspace\ecos
+APRIL C:\Users\Administrator\Desktop\.openclaw\workspace\ziwei\backup\openclaw-full-2026-04-18\ecos
+OK 51503 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\paper\JEDC_submission_draft_FSRS_FINAL_v43.md
+OK 40095 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\paper\JEDC_submission_FSRS_FINAL_v43_final_clean.tex
+OK 5918 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\paper\references.bib
+OK 1977 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\paper\cover_letter.md
+OK 615 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\__init__.py
+OK 4702 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\config.py
+OK 7442 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\control\ecos_env.py
+OK 1229 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\control\ecos_env_fixed.py
+MISSING C:\Users\Administrator\Desktop\.openclaw\workspace\ziwei\workspace\ecos\ecos\control\__init__.py
+OK 511 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\agents\__init__.py
+OK 15687 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\agents\cognitive_memory.py
+OK 11022 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\agents\fsrs_memory.py
+OK 7062 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\agents\sm2_memory.py
+OK 5861 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\agents\base_agent.py
+OK 636 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\agents\trader\__init__.py
+OK 11905 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\agents\trader\human_agent.py
+OK 5640 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\agents\trader\retail_agent.py
+OK 5984 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\agents\trader\market_maker.py
+OK 7194 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\agents\trader\base_trader.py
+OK 578 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\__init__.py
+OK 22095 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\src\ecos\governance\governance_manager.py
+OK 4578 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\grid_search\grid_search_control.py
+OK 3425 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\grid_search\run.py
+OK 4134 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\grid_search\grid_search_fsrs_highT.py
+OK 8437 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\robustness\robustness_fsrs_final.py
+OK 5756 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\robustness\robustness_fsrs_smallS.py
+OK 2589 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\robustness\run.py
+OK 13282 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\comparison\compare_memory_engines.py
+OK 8824 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\figure_generation\generate_all_figures.py
+OK 660 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\calibration\params_historical.json
+OK 394 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\calibration\params_test.json
+OK 597 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\calibration\calibration_report.md
+OK 1600 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\calibration\calibration_report_full.md
+OK 16168 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\monte_carlo\run_fsrs_vs_ee_monte_carlo.py
+OK 12421 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\monte_carlo\run_monte_carlo.py
+OK 15099 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\longterm\run_fsrs_vs_ee_10year_3650d.py
+OK 15083 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\longterm\run_fsrs_vs_ee_longterm_1000d.py
+OK 27720 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\trading\run_enhanced_trading_simulation.py
+OK 8767 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\trading\run_e2e_verification.py
+OK 8613 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\trading\run_humanagent_simulation.py
+OK 14028 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\experiments\trading\run_full_trading_simulation.py
+OK 4461 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\grid\results_grid.json
+OK 6179 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\grid\results_grid_fsrs_highT.json
+OK 664 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\rl\results_v4.json
+OK 143297 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\rl\ppo_final.zip
+OK 140522 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\rl\best_model.zip
+OK 23771 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\comparison\fsrs_vs_ee.json
+OK 127157 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\comparison\fsrs_vs_ee.png
+OK 185584 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\validation_5_5\fsrs_vs_sm20_monte_carlo.json
+OK 193325 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\validation_5_5\fsrs_vs_sm20_10year_3650d.json
+OK 160038 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\validation_5_5\fsrs_vs_sm20_longterm_1000d.json
+OK 3508 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\validation_5_5\full_trading_simulation.json
+OK 1621 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\validation_5_5\e2e_verification_results.json
+OK 193345 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\validation_5_5\fsrs_vs_ee_10year_3650d.json
+OK 3415 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\results\stress\stress_1000a_output.txt
+OK 188189 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\figures\fig1_trajectory.png
+OK 246145 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\figures\fig2_grid_search.png
+OK 216989 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\figures\fig3_robustness.png
+OK 321670 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\figures\fig4_fsrs_vs_ee.png
+OK 242150 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\figures\fig5_grade_impact.png
+OK 211326 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\figures\fig6_fsrs_vs_ee_10year.png
+OK 36870 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\figures\extra\fig1_trajectory_e2e.png
+OK 660 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\data\params_historical.json
+OK 394 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\data\params_test.json
+OK 1559 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\data\initial_world.json
+OK 751 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\requirements.txt
+OK 3002 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\README.md
+OK 1817 C:\Users\Administrator\Desktop\JEDC-FSRS-v43-replication\REPRODUCE.md
+SUMMARY copied=67 bytes=3038240 missing=1 dest_files=68
+MISSING_FINAL C:\Users\Administrator\Desktop\.openclaw\workspace\ziwei\workspace\ecos\ecos\control\__init__.py

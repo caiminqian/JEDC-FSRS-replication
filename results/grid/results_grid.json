@@ -1,0 +1,154 @@
+{
+  "best_cfg": "thr=0.45,sev=0.40",
+  "best_return": 3947.3326195143163,
+  "baseline_cfg": "thr=0.30,sev=0.60",
+  "baseline_return": 3433.558998975903,
+  "all_results": {
+    "thr=0.25,sev=0.20": {
+      "avg_return": 3629.9058977030218,
+      "std_return": 1380.9699319628653,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.25,sev=0.40": {
+      "avg_return": 3484.0567261204123,
+      "std_return": 1425.7431737366676,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.25,sev=0.60": {
+      "avg_return": 3595.0943648070097,
+      "std_return": 1492.038365895174,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.25,sev=0.80": {
+      "avg_return": 3937.290435116738,
+      "std_return": 1568.4535727990647,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.35,sev=0.20": {
+      "avg_return": 3937.290435116738,
+      "std_return": 1568.4535727990647,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.35,sev=0.40": {
+      "avg_return": 3740.943536389619,
+      "std_return": 1438.097126621877,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.35,sev=0.60": {
+      "avg_return": 3398.7474660798907,
+      "std_return": 1303.7932913430886,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.35,sev=0.80": {
+      "avg_return": 3544.5966376625,
+      "std_return": 1264.5536255495574,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.45,sev=0.20": {
+      "avg_return": 3690.4458092451096,
+      "std_return": 1206.5532874793182,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.45,sev=0.40": {
+      "avg_return": 3947.3326195143163,
+      "std_return": 1176.9083724708412,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.45,sev=0.60": {
+      "avg_return": 3836.294980827719,
+      "std_return": 1126.8992135329154,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.45,sev=0.80": {
+      "avg_return": 3836.294980827719,
+      "std_return": 1126.8992135329154,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.55,sev=0.20": {
+      "avg_return": 3725.2573421411216,
+      "std_return": 1063.0294649350278,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.55,sev=0.40": {
+      "avg_return": 3528.9104434140027,
+      "std_return": 809.2245043406905,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.55,sev=0.60": {
+      "avg_return": 3528.9104434140027,
+      "std_return": 809.2245043406905,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.55,sev=0.80": {
+      "avg_return": 3528.9104434140027,
+      "std_return": 809.2245043406905,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.65,sev=0.20": {
+      "avg_return": 3674.759614996612,
+      "std_return": 718.3974519267941,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.65,sev=0.40": {
+      "avg_return": 3716.742289096862,
+      "std_return": 739.6803648969436,
+      "avg_interventions": 0.1,
+      "avg_crisis": 0.0
+    },
+    "thr=0.65,sev=0.60": {
+      "avg_return": 3618.1118589043617,
+      "std_return": 885.836676474437,
+      "avg_interventions": 0.1,
+      "avg_crisis": 0.0
+    },
+    "thr=0.65,sev=0.80": {
+      "avg_return": 3418.3837842434646,
+      "std_return": 934.9284674359848,
+      "avg_interventions": 0.6,
+      "avg_crisis": 0.0
+    },
+    "thr=0.30,sev=0.20": {
+      "avg_return": 3322.5213602893054,
+      "std_return": 1079.4159477526732,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.30,sev=0.40": {
+      "avg_return": 3579.408170558512,
+      "std_return": 1132.9215092636557,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.30,sev=0.60": {
+      "avg_return": 3433.558998975903,
+      "std_return": 1180.866921918707,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    },
+    "thr=0.30,sev=0.80": {
+      "avg_return": 3287.7098273932934,
+      "std_return": 1209.4785102301803,
+      "avg_interventions": 0.0,
+      "avg_crisis": 0.0
+    }
+  },
+  "elapsed_seconds": 202.07376074790955,
+  "timestamp": 1776407657.850025
+}

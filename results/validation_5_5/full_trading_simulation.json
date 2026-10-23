@@ -1,0 +1,142 @@
+{
+  "config": {
+    "ticks": 200,
+    "markets": [
+      "BTC",
+      "ETH",
+      "AAPL"
+    ],
+    "initial_prices": {
+      "BTC": 45000,
+      "ETH": 3000,
+      "AAPL": 175
+    },
+    "volatilities": {
+      "BTC": 0.03,
+      "ETH": 0.035,
+      "AAPL": 0.015
+    },
+    "shock_prob": 0.03,
+    "n_retail": 5,
+    "n_institution": 2,
+    "n_mm": 2
+  },
+  "agents": [
+    {
+      "agent_id": "2d4b4f22-f66a-48f7-a0cb-8bb26b8db229",
+      "type": "HumanAgent",
+      "engine": "FSRS",
+      "initial_balance": 250000,
+      "final_value": 257091.29666026088,
+      "pnl": 7091.296660260879,
+      "max_drawdown": 0.3569782503582982,
+      "total_trades": 51,
+      "final_positions": {
+        "BTC": {
+          "size": 4.683178612764754,
+          "avg_cost": 49441.42268285641,
+          "realized_pnl": 0.0
+        }
+      }
+    },
+    {
+      "agent_id": "7779bf69-943f-4cce-8321-a24d6d5b0f7a",
+      "type": "RetailAgent",
+      "engine": "N/A",
+      "initial_balance": 57606,
+      "final_value": 57606,
+      "pnl": 0,
+      "max_drawdown": 0.0,
+      "total_trades": 0,
+      "final_positions": {}
+    },
+    {
+      "agent_id": "d63078ed-9278-4c03-a56f-8c2961969a55",
+      "type": "RetailAgent",
+      "engine": "N/A",
+      "initial_balance": 35060,
+      "final_value": 35060,
+      "pnl": 0,
+      "max_drawdown": 0.0,
+      "total_trades": 0,
+      "final_positions": {}
+    },
+    {
+      "agent_id": "7bd7df82-1df9-4e39-980b-9911dc31bb01",
+      "type": "RetailAgent",
+      "engine": "N/A",
+      "initial_balance": 69792,
+      "final_value": 69792,
+      "pnl": 0,
+      "max_drawdown": 0.0,
+      "total_trades": 0,
+      "final_positions": {}
+    },
+    {
+      "agent_id": "48e70966-9c20-4197-9a17-fba0a3adef9f",
+      "type": "RetailAgent",
+      "engine": "N/A",
+      "initial_balance": 43250,
+      "final_value": 43250,
+      "pnl": 0,
+      "max_drawdown": 0.0,
+      "total_trades": 0,
+      "final_positions": {}
+    },
+    {
+      "agent_id": "948c6870-f462-4d1a-96bd-5b0832de2bc7",
+      "type": "RetailAgent",
+      "engine": "N/A",
+      "initial_balance": 33032,
+      "final_value": 33032,
+      "pnl": 0,
+      "max_drawdown": 0.0,
+      "total_trades": 0,
+      "final_positions": {}
+    },
+    {
+      "agent_id": "e9a8b85e-f27e-42e4-a9bf-2f5235292335",
+      "type": "RetailAgent",
+      "engine": "N/A",
+      "initial_balance": 572801,
+      "final_value": 572801,
+      "pnl": 0,
+      "max_drawdown": 0.0,
+      "total_trades": 0,
+      "final_positions": {}
+    },
+    {
+      "agent_id": "3ab02401-7352-4780-a7ec-cf3b7844b28d",
+      "type": "RetailAgent",
+      "engine": "N/A",
+      "initial_balance": 524645,
+      "final_value": 524645,
+      "pnl": 0,
+      "max_drawdown": 0.0,
+      "total_trades": 0,
+      "final_positions": {}
+    },
+    {
+      "agent_id": "9428a8f1-8066-4e1d-bb5d-761c37664661",
+      "type": "RetailAgent",
+      "engine": "N/A",
+      "initial_balance": 1000000,
+      "final_value": 1000000,
+      "pnl": 0,
+      "max_drawdown": 0.0,
+      "total_trades": 0,
+      "final_positions": {}
+    },
+    {
+      "agent_id": "db2c8334-d7c8-4056-9fce-05610e0f6c9b",
+      "type": "RetailAgent",
+      "engine": "N/A",
+      "initial_balance": 1000000,
+      "final_value": 1000000,
+      "pnl": 0,
+      "max_drawdown": 0.0,
+      "total_trades": 0,
+      "final_positions": {}
+    }
+  ]
+}

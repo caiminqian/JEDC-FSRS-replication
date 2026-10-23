@@ -1,0 +1,41 @@
+{
+  "calibration_date": "2026-04-16T12:19:07.008598+00:00",
+  "method": "grid_search_5event",
+  "events": [
+    "1987",
+    "2000",
+    "2008",
+    "2020",
+    "2022"
+  ],
+  "best_parameters": {
+    "S_initial": 45,
+    "severity_crisis": 0.5,
+    "alpha": 0.6,
+    "S_recovery": 10.0,
+    "severity_correction": 0.5,
+    "difficulty_factor": 1.0
+  },
+  "best_loss": 0.5603527486096339,
+  "grid": {
+    "S_initial": [
+      35,
+      37,
+      40,
+      42,
+      45
+    ],
+    "severity_crisis": [
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "alpha": [
+      0.45,
+      0.5,
+      0.55,
+      0.6
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "baseline": {
+    "avg_return": 175.71938972239113,
+    "std_return": 131.26939360256614,
+    "avg_interventions": 3.0,
+    "avg_crisis_duration": 0.0,
+    "min_return": 61.5647579357028,
+    "max_return": 584.1608418524265
+  },
+  "rl_v4": {
+    "avg_return": -1440.199284875895,
+    "std_return": 118.83761160357702,
+    "avg_interventions": 3.0,
+    "avg_crisis_duration": 77.68,
+    "min_return": -1766.8473562020808,
+    "max_return": -1262.2808111067861
+  },
+  "improvement": -1615.918674598286,
+  "timestamp": "2026-04-16T21:38:25.382448",
+  "config": {
+    "n_agents": 30,
+    "max_ticks": 300,
+    "total_timesteps": 30000
+  }
+}

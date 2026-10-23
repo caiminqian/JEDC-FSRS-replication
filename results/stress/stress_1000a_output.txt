@@ -1,0 +1,54 @@
+============================================================
+ECOS Stress Test
+============================================================
+Agents : 1000
+Ticks  : 1000
+Output : reports/calibrated_1000a.json
+============================================================
+
+[OK] Report saved to reports/calibrated_1000a.json
+
+Key Metrics:
+   Avg tick time  : 90.80 ms
+   Total trades   : 2332508
+   Errors         : 0
+   Peak memory    : 1085.7 MB
+
+[PASS] System stable
+
+
+STDERR:
+WARNING:__main__:Starting stress test: 1000 agents, 1000 ticks
+WARNING:__main__:Generated 1000 agents
+WARNING:__main__:Initial memory: 46.5 MB, CPU: 19.2%
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 99998.62170199999, have 99996.37133999998
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 99998.62170199999, have 99996.37133999998
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 4999.262184, have 4998.760905000003
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 289.677393, have 284.7407679999859
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 3200.791788, have 3199.6710839999405
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 20.186621, have 15.861056000106132
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 193.18833600000002, have 191.4998519999428
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 2.943814, have 2.882009000004318
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for US10Y: need 1.8451580000000003, have 1.3403219999579603
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 2.94227, have 1.3403219999579603
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 2.9273200000000004, have 2.1945439999571734
+WARNING:ecos.agents.trader.base_trader:Insufficient capital for GC=F: need 2.890794, have 2.2861270001007403
+WARNING:__main__:Tick 100/1000 | Active: 1000 | Trades: 193748 | TickTime: 82.59ms | Mem: 183.7MB
+WARNING:__main__:Tick 200/1000 | Active: 1000 | Trades: 421109 | TickTime: 88.18ms | Mem: 311.1MB
+WARNING:__main__:Tick 300/1000 | Active: 1000 | Trades: 653345 | TickTime: 90.15ms | Mem: 411.7MB
+WARNING:__main__:Tick 400/1000 | Active: 1000 | Trades: 888680 | TickTime: 90.43ms | Mem: 503.4MB
+WARNING:__main__:Tick 500/1000 | Active: 1000 | Trades: 1126312 | TickTime: 92.35ms | Mem: 596.3MB
+WARNING:__main__:Tick 600/1000 | Active: 1000 | Trades: 1365508 | TickTime: 92.32ms | Mem: 709.8MB
+WARNING:__main__:Tick 700/1000 | Active: 1000 | Trades: 1607478 | TickTime: 92.86ms | Mem: 803.9MB
+WARNING:__main__:Tick 800/1000 | Active: 1000 | Trades: 1849884 | TickTime: 93.24ms | Mem: 896.4MB
+WARNING:__main__:Tick 900/1000 | Active: 1000 | Trades: 2090464 | TickTime: 92.04ms | Mem: 990.7MB
+WARNING:__main__:Tick 1000/1000 | Active: 1000 | Trades: 2332508 | TickTime: 93.87ms | Mem: 1085.7MB
+WARNING:__main__:
+============================================================
+WARNING:__main__:STRESS TEST COMPLETE
+WARNING:__main__:============================================================
+WARNING:__main__:Agents: 1000 | Ticks: 1000
+WARNING:__main__:Total trades: 2332508
+WARNING:__main__:Avg tick time: 90.80ms
+WARNING:__main__:Peak memory: 1085.7 MB
+WARNING:__main__:Errors: 0
