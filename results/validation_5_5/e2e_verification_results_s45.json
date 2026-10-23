@@ -1,0 +1,91 @@
+{
+  "config": {
+    "ticks": 200,
+    "markets": [
+      "BTC",
+      "ETH",
+      "AAPL"
+    ],
+    "initial_prices": {
+      "BTC": 45000,
+      "ETH": 3000,
+      "AAPL": 175
+    },
+    "volatilities": {
+      "BTC": 0.03,
+      "ETH": 0.035,
+      "AAPL": 0.015
+    },
+    "shock_prob": 0.03
+  },
+  "seed": 20260418,
+  "total_ticks": 200,
+  "shocks": [
+    {
+      "tick": 4,
+      "symbol": "BTC",
+      "severity": 0.21740511815505142
+    },
+    {
+      "tick": 26,
+      "symbol": "AAPL",
+      "severity": 0.1758216539409067
+    },
+    {
+      "tick": 49,
+      "symbol": "BTC",
+      "severity": 0.3755245530923067
+    },
+    {
+      "tick": 58,
+      "symbol": "ETH",
+      "severity": 0.19753920527036703
+    },
+    {
+      "tick": 85,
+      "symbol": "AAPL",
+      "severity": 0.1933545032481206
+    },
+    {
+      "tick": 94,
+      "symbol": "AAPL",
+      "severity": 0.22933821771814575
+    },
+    {
+      "tick": 110,
+      "symbol": "ETH",
+      "severity": 0.34210570633366977
+    },
+    {
+      "tick": 111,
+      "symbol": "ETH",
+      "severity": 0.16350021253367633
+    },
+    {
+      "tick": 144,
+      "symbol": "AAPL",
+      "severity": 0.34350575477287437
+    }
+  ],
+  "memory_history": [
+    {
+      "tick": 0,
+      "R": 1.0
+    },
+    {
+      "tick": 50,
+      "R": 0.9992390949756105
+    },
+    {
+      "tick": 100,
+      "R": 0.9991660164667312
+    },
+    {
+      "tick": 150,
+      "R": 0.9998065034389336
+    }
+  ],
+  "final_R": 0.9998065034389336,
+  "engine": "FSRS",
+  "agent_type": "HumanAgent"
+}
