@@ -1,62 +1,96 @@
-# JEDC-FSRS-v43 投稿复现包
+# A Power-Law FSRS Approach — Replication Pack
 
-论文：Cognitive Spaced Repetition in Agent-Based Economic Modeling: A SuperMemo Approach
-正文：`paper/JEDC_submission_draft_FSRS_FINAL_v43.md`（2026-09-26 稿）
-来源：dao 上 `.openclaw/workspace/ziwei/workspace/ecos/`（2026-09-26 工作副本）为主，
-4 月备份 `backup/openclaw-full-2026-04-18/ecos/` 只补 9 月副本缺失的稳健性脚本。
+Replication pack for the manuscript **"A Power-Law FSRS Approach"**
+(submitted to the *Journal of Economic Dynamics and Control*),
+which introduces a simplified FSRS-style, power-law forgetting model
+into agent-based economic modeling and tests macroprudential
+intervention policies in the ECOS simulation environment.
 
-## src/ecos 是完整包，不是截取
+**Cite this pack:** version DOI for v48:
+[10.5281/zenodo.23594010](https://doi.org/10.5281/zenodo.23594010);
+concept DOI (all versions):
+[10.5281/zenodo.23594009](https://doi.org/10.5281/zenodo.23594009).
+Archived record: <https://zenodo.org/records/23594010>.
 
-`src/ecos/` 是原包全量复制（不含 `__pycache__`），包含 control、agents（含 trader 全套，
-因为 trader/`__init__.py` 会导入 institution/macro/regulator/risk/analyst）、
-governance（含 ministries）、core（含 world_state）、risk 全套，
-因为 `ecos_env.py` 直接导入 `ecos.core.world_state`，
-`governance_manager.py` 直接导入 `ecos.core.metrics`、`ecos.governance.ministries`、
-`ecos.risk.*`。只留 control/agents/governance 是跑不起来的，本包已补齐。
-唯一生成文件是 `src/ecos/control/__init__.py`（空文件，源目录本来就没有，
-Python 3 命名空间包本来也能跑，补上只是为了导入路径明确）。
+**Current manuscript:** `paper/JEDC_submission_draft_FSRS_FINAL_v48.md`
+(v48; earlier drafts v43–v47 are kept in the same folder for audit).
+The tex draft in `paper/` predates v48 and has not yet been fully
+synchronised with it; its Data Availability section already carries
+the v48 DOI.
 
-运行工作目录必须是 `src/`，导入写 `from ecos.control.ecos_env import ECOSControlEnv`，
-不要写 `src.ecos.*`，否则环境内部的 `from ecos.core...` 会断。详见 REPRODUCE.md。
+## What is inside
 
-## 表、图与脚本对照
+| Path | Contents |
+| --- | --- |
+| `paper/` | Manuscript drafts (v43–v48), the tex draft, `references.bib`, `cover_letter.md`, and per-version changelogs |
+| `src/ecos/` | The full ECOS package used by the experiments (control, agents including traders, governance, core, risk) |
+| `experiments/` | Grid search, paired reruns, robustness and p/S sweeps, comparison, Monte Carlo, long-term, trading, and stress scripts |
+| `results/` | Archived result JSONs behind the paper's tables, including the original grid, the same-seed and S=45 reruns |
+| `figures/` | Figures, including the corrected Figure 5 (`fig5_grade_impact_v47.png`) |
+| `data/` | Calibration parameters and the initial world state |
+| `MANIFEST.txt` | File list with sizes and SHA-256 hashes (129 files, excluding the manifest itself and `__pycache__`) |
 
-1. 表 2 / 图 2 / §4.4.2 网格搜索：`experiments/grid_search/grid_search_control.py`
-   → `results/grid/results_grid.json`，最优 thr=0.45, sev=0.40，3947.33；
-   基线 thr=0.30, sev=0.60，3433.56。
-2. §5.1.3 FSRS vs EE 对比：`experiments/comparison/compare_memory_engines.py`
-   → `figures/fig4_fsrs_vs_ee.png`。
-3. §5.3 稳健性：`experiments/robustness/robustness_fsrs_final.py`
-   （仅 4 月备份有，9 月副本缺，已在 MANIFEST 标注来源）→ `figures/fig3_robustness.png`。
-4. §4.3 校准：`experiments/calibration/`，S=45、α=0.6。
-5. §5.5.1 端到端交易：`experiments/trading/run_enhanced_trading_simulation.py`
-   → `results/validation_5_5/full_trading_simulation.json`。
-6. §5.5.2 Monte Carlo：`experiments/monte_carlo/run_fsrs_vs_ee_monte_carlo.py`
-   → `results/validation_5_5/fsrs_vs_sm20_monte_carlo.json`（30 runs，seed_base 0，250 ticks）。
-7. §5.5.3 十年：`experiments/longterm/run_fsrs_vs_ee_10year_3650d.py`
-   → `results/validation_5_5/fsrs_vs_sm20_10year_3650d.json`（8 runs，seed_base 200，3650 ticks）。
-8. §5.4 PPO：只有 `results/rl/results_v4.json` 和模型 zip，训练脚本在本包来源清单中未定位，
-   见 REPRODUCE.md 的缺口说明，不要把结果说成已完整复现训练过程。
-9. §5.2 1000 agent：`results/stress/stress_1000a_output.txt`（原始输出文本）。
+`src/ecos/` is a complete copy of the source package, not a cherry-picked
+subset: `ecos_env.py` imports `ecos.core.world_state`, and the governance
+manager imports `ecos.core.metrics`, the ministries, and `ecos.risk.*`,
+so a partial copy cannot run. The only generated file is the empty
+`src/ecos/control/__init__.py` (the source directory never had one).
 
-## 命名说明（不要改名掩盖）
+## Reproduce
 
-`results/validation_5_5/` 里原始文件和键名还叫 sm20，但按论文自己的术语注，
-代码实现的基线是 EE 指数曲线，不是商业 SM-20。原文件名保留作溯源，
-README 在此写明：sm20 = EE 基线。
+The working directory must be `src/`; imports are written as
+`from ecos.control.ecos_env import ECOSControlEnv` (never `src.ecos.*`).
+For scripts under `experiments/`, set `PYTHONPATH` to `src/`.
+See `REPRODUCE.md` for the full run layout, the exact commands, and
+the known gaps.
 
-## 明确排除
+## Headline results (v48, audited)
 
-1. v2–v42 草稿、v43 中间 tex 变体，只留一个 tex。
-2. `ziwei/` 顶层 653 个 check_/fix_/update_ 一次性脚本。
-3. `.env`、docker、grafana、logs、`__pycache__`。
-4. 沙箱 ecos-push（后来 fsrs 6.3.1 官方库版），与本篇公式口径不同。
+- **No threshold–severity optimum is identified.** The original grid
+  (default memory bank, S = 5/3/2) reported an apparent optimum at
+  threshold 0.45 / severity 0.40 (3947.33 vs baseline 3433.56), but
+  each configuration ran a different seed set, so the gap is
+  seed-confounded and is kept in the paper for audit only.
+- **Paired reruns, same seeds, S = 45:** both the 0.45/0.40 and the
+  0.30/0.60 configurations return exactly the same numbers
+  (−314.71 ± 128.20 on seed set 10; −304.23 ± 122.01 on seed set 110),
+  with zero interventions — average retrievability never falls below
+  either threshold, so the effective policy in this regime is
+  non-intervention. The full S = 45 grid spans −325.19 to −247.56,
+  again with zero interventions throughout, and its cross-config
+  spread is not a policy comparison (configurations still use
+  different seed sets).
+- **1000-agent scaling run (audit):** the comparison policy actually run
+  was threshold 0.55 / severity 0.20 (not 0.45/0.40), returning 10402.47
+  vs baseline 2196.53 over 3 episodes of 1000 ticks. This run used the
+  default memory bank and was **not** rerun at S = 45, so its numbers
+  must not be compared directly with the S = 45 grid.
+- **p/S sweep:** the apparent effect of network density p is largely an
+  isolated-agent artifact — an agent with no predecessors perceives
+  only 0.4 × its true retrievability, which can drag the mean into the
+  target zone and earn the zone bonus. The fix (fall back to true
+  retrievability with no neighbours) is future work; applying it would
+  change the environment and all prior numbers.
+- **FSRS vs EE:** at tick 500 the archived inputs give FSRS/EE ≈ 47,000×
+  (reported as an approximation; the v43 figure of 47,867× used rounded
+  values). Note that the "EE" baseline in code is an exponential-decay
+  curve, not the commercial SM-20 algorithm; legacy `sm20` file and key
+  names are preserved for provenance.
 
-## 本包不等于论文已可发表
+## Known limitations (stated in the paper, §6.4)
 
-打包只解决“代码找得到、对得上 json”这一层。论文正文的以下问题仍在，
-投之前必须另行修文（不在本包改动正文）：半衰期 FSRS/EE 混用、§3.3 G=2 示例反号、
-§4.4.2 的 3927 stray、目标区 48.1%/51.0% 不一致、Monte Carlo 正文“No EE run > 0.5”
-与 raw 数据自打脸、>100%、结论“early, mild, frequent”与“零干预最优”自相矛盾、
-Cont(2001) 参考文献缺失。目标区时间的源 json 在本包来源中未找到，
-`results/grid/results_grid.json` 里没有 zone 字段。
+1. The PPO training script was not located in the source archive — only
+   `results/rl/results_v4.json` and the model zips are present.
+2. The 1000-agent run and the §5.5 supplementary experiments were not
+   re-audited at S = 45 in v48.
+3. The isolated-agent perception defect in `ECOSControlEnv._compute_obs`
+   is still present in this code.
+4. The original v43 claims withdrawn in v44–v48 (the 48.1% target-zone
+   figure, the Monte Carlo and 10-year misstatements, the §3.3 grade
+   mapping, and the §5.3 robustness table) are documented in the
+   changelogs, not silently edited away.
+
+## License
+
+Not yet assigned. Until a license file is added, reuse terms are to be
+confirmed with the author.
