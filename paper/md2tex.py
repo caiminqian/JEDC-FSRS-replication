@@ -57,8 +57,10 @@ def escape_text(s):
     return s
 
 
-def inline(s):
-    """Convert one prose chunk (may contain $math$, `code`, **bold**, *ital*)."""
+def inline(s, allow_path=True):
+    r"""Convert one prose chunk (may contain $math$, `code`, **bold**, *ital*).
+    allow_path=False for moving arguments (captions, headings): \path is
+    fragile there (\url used in a moving argument) so code stays \texttt."""
     slots = []
 
     def stash(final):
@@ -76,6 +78,17 @@ def inline(s):
     # The manuscript uses \(...\) as LaTeX inline-math delimiters (12 pairs,
     # all outside $...$ spans): convert them to $...$ before splitting.
     s = s.replace('\\(', '$').replace('\\)', '$')
+    # Bare currency amounts ($7,091.30 with no closing $) are NOT math:
+    # protect them before $ splitting, or the lone $ swallows everything
+    # up to the next math $ and breaks compilation. The negative lookaheads
+    # keep real math spans intact: after the number must NOT come a digit,
+    # $, \, ^, _, a letter, or a decimal point followed by a digit (so
+    # "$7.7\times$" and "$0.000015$" never match, even by backtracking),
+    # nor whitespace followed by a math token (so "$1.5 \times 10^{-5}$"
+    # never matches either).
+    s = re.sub(r'\$(\d[\d,]*(?:\.\d+)?)(?![\d$\\^_a-zA-Z])(?!\.\d)'
+               r'(?!\s*[\\+\-*=<>_^])',
+               lambda m: stash('\\$' + m.group(1)), s)
     s = markup_prepass(s, r'\*\*([^*]+?)\*\*', r'\textbf')
     s = markup_prepass(s, r'(?<!\*)\*([^*]+?)\*(?!\*)', r'\textit')
     parts = re.split(r'(\$[^$\n]+\$)', s)
@@ -84,7 +97,16 @@ def inline(s):
 
     def protect_code(seg):
         def repl(m):
-            code_slots.append(r'\texttt{' + escape_text(m.group(1)) + '}')
+            content = m.group(1)
+            # File paths in \texttt cannot break across lines, which
+            # produced up to 186pt overfull boxes; \path (from url, loaded
+            # via hyperref) breaks at slashes. Paths here contain only
+            # letters, digits, _, ., / so \path is safe for them.
+            if (allow_path and '/' in content
+                    and not re.search(r'[%#\\{}]', content)):
+                code_slots.append(r'\path{' + content + '}')
+            else:
+                code_slots.append(r'\texttt{' + escape_text(content) + '}')
             return '\x1c%d\x1d' % (len(code_slots) - 1)
         return re.sub(r'`([^`]+)`', repl, seg)
 
@@ -214,6 +236,9 @@ def main():
                 form = form.replace('R_std', r'\mathrm{R\_std}')
                 form = apply_uni(form, UNI_MATH)
                 form = form.replace('[', r'\left[').replace(']', r'\right]')
+                # TeX control words eat following letters: "2\cdotseverity"
+                # would parse as the undefined command \cdotseverity.
+                form = re.sub(r'\\cdot(?=[a-zA-Z])', r'\\cdot ', form)
                 if comment.strip():
                     body.append(form + r' &\text{' + comment.strip() + r'} \\')
                 else:
@@ -275,7 +300,7 @@ def main():
             body.append('\\includegraphics[width=%.2f\\textwidth]{%s}'
                         % (width / 100.0, fname))
             if cap is not None:
-                body.append('\\caption{%s}' % inline(cap))
+                body.append('\\caption{%s}' % inline(cap, allow_path=False))
                 body.append('\\label{fig:%s}' % label)
             body.append('\\end{figure}')
             body.append('')
@@ -305,20 +330,20 @@ def main():
             elif state == 'appB':
                 cur_group = head
                 bib_groups.append((cur_group, []))
-                body.append('\\subsection{%s}' % inline(head))
+                body.append('\\subsection{%s}' % inline(head, allow_path=False))
             elif state == 'abstract':
                 body.append('\\end{abstract}')
                 state = 'main'
-                body.append('\\section{%s}' % inline(strip_number(head)))
+                body.append('\\section{%s}' % inline(strip_number(head), allow_path=False))
             else:
                 if state == 'abstract':
                     body.append('\\end{abstract}')
                     state = 'main'
-                body.append('\\section{%s}' % inline(strip_number(head))
+                body.append('\\section{%s}' % inline(strip_number(head), allow_path=False)
                         if depth == 2 else
-                        '\\subsection{%s}' % inline(strip_number(head))
+                        '\\subsection{%s}' % inline(strip_number(head), allow_path=False)
                         if depth == 3 else
-                        '\\subsubsection{%s}' % inline(strip_number(head)))
+                        '\\subsubsection{%s}' % inline(strip_number(head), allow_path=False))
             i += 1
             continue
         if s.startswith('> '):
@@ -408,7 +433,7 @@ def main():
     out.append('\\setlength{\\parindent}{0pt}')
     out.append('\\setlength{\\parskip}{1ex}')
     out.append('')
-    out.append('\\title{%s}' % inline(title))
+    out.append('\\title{%s}' % inline(title, allow_path=False))
     out.append('\\author{MinQian Cai}')
     out.append('\\date{Submitted to \\textit{Journal of Economic Dynamics '
                'and Control}\\\\Draft: 2026-10-24 (v52)}')

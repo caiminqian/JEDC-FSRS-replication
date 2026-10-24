@@ -39,3 +39,28 @@
   local TeX install) and fix any error there; do not claim it compiles
   until that run succeeds.
 - Submission itself is NOT part of this change and needs its own approval.
+
+## Compile verification (2026-10-24 19:3x, TeX Live 2023/Debian, pdflatex)
+
+- Installed in the sandbox (apt, texlive-latex-base + latex-recommended +
+  fonts-recommended; / is ephemeral, the install does not survive a VM
+  reset — the PDF and log in `~/workspace/jedc_build/` do).
+- Result: COMPILES. Two passes, rc=0 both, 0 errors, 0 LaTeX warnings,
+  28 pages, 1,403,342 bytes, all 5 figures embedded.
+- Three converter bugs found by compiling and fixed in `md2tex.py` (the
+  reviewed tex did not compile; the synced tex is the fixed one):
+  1. `\cdot` directly followed by a letter parses as one undefined command
+     (`\cdotseverity`); the fence converter now inserts a space.
+  2. Bare currency `$7,091.30` (no closing $) swallowed everything up to
+     the next math $; currency amounts are now protected before $ splitting,
+     with lookaheads that keep real math spans (`$7.7\times$`,
+     `$1.5 \times 10^{-5}$`) intact.
+  3. `\path` (used so long file paths can break across lines) is fragile
+     in moving arguments; captions and headings now stay `\texttt`.
+- Remaining warnings (not errors): 19 overfull hboxes, worst 136pt, all
+  from wide tables (l-columns, long cells) and long identifiers. Content
+  is intact; tables run into the margin in places. Reformatting tables
+  to wrapping p-columns is a separate typographic change, not done here;
+  Elsevier re-typesets on acceptance anyway.
+- The fixed tex (SHA256 492b2d5d...) is what was re-synced after this
+  verification; the pre-fix tex from commit 214bc86 did NOT compile.
