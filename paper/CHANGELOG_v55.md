@@ -147,3 +147,10 @@
 - Figure 6：仓库原无可用生成脚本（`generate_all_figures.py` 无 fig6、含 mock 数据、OUT_DIR 错误，未跑）；新脚本 `experiments/figure_generation/fig6_v55.py` 按已发图 4 面板结构重建，数据源 v55 A-10y 参考运行（8 对，seeds 200–207）；输出 `figures/fig6_fsrs_vs_ee_10year_v55.png`（261,039 字节，SHA256 `544ccdcb…`）；FSRS 0.9522 / EE 0.9074 / 差 0.0448 与 stage1 报告一致；横轴修正（旧图 0–72 是 fallback 采样序号却标 Day，v55 用真实 tick 0–3600）。
 - 稿改动 5 处（链接×2、caption×2、(v47)→(v55)），diff 已核无其他改动；dao 5/5 哈希一致；GitHub 提交 515b67f。
 - 附：Appendix A 的 bank 文件数在本次清理中由 2 改为 4（2 JSON + 2 dao 日志），与实传文件一致；§17 的起草记录行保留原貌。
+
+## 21. 真实数据回测写进稿子（2026-10-26，用户批准）
+
+- 新增 §5.9（J1 冻结参数前向回测）：Arm 1 扫描 2022-03-08 至 2026-10-22 得 13 事件（±15 天最大峰 ≥25，§5.8 等级映射；除 2025-04-08 G2 外全 G3；无 G1 事件）；冻结 J1 参数（w20=0.4，S_post 0.1295/0.2589/0.5175），复用 joint_fit 参考构造（60 天峰前中位 floor、780 天窗）；12/13 过门（loss ≤0.112、recovery ≤0.034），均值 loss 0.1206；唯一破门 2022-12-12（loss 0.7892）机制为峰 25.00 < floor 25.87 致参考倒置，属扫描 admissibility 缺口，verdict 不改、不剔除 → Arm 1 FAIL。
+- Arm 2 多冲击动力学（fsrs_memory 类单课抽象，S0=0.5，等级变化日冲击）：引擎 1/13 胜（MSE 0.13–0.83 vs 闭式 0.015–0.089；唯一胜为倒置参考上的空胜）→ FAIL，实质阴性（冲击当天 R=1.0 致锯齿轨迹）；不否定 J1 参数、不触动 §5.8 B 线。
+- 联动改动：摘要 +1 句；结论 "Two v55 chapters" → "Three v55 chapters" + §5.9 句；限制 5 加 (v55 backtest update) 句；新增限制 24（扫描 admissibility）、25（引擎 R 轨迹范围）；§6.5 实测方向 bullet 更新。Appendix A 本次未动（回测文件进 dao pack 在同步时再计，与清理口径一致）。
+- 归档（仓库，未提交）：`experiments/backtest/backtest_v1.py`、`results/backtest/backtest_results.json`（与 jedc_pack 原件 SHA256 一致）；工作稿仍为 v55（沿 sweep/stress 的就地编辑惯例，未改名 v56）。

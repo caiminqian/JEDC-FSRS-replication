@@ -1,0 +1,1688 @@
+{
+  "frozen_params": {
+    "w17": 0.6096,
+    "w18": 0.0496,
+    "w19": 0.1841,
+    "w20": 0.4,
+    "S0": 0.5,
+    "S_POST": {
+      "1": 0.1295,
+      "2": 0.2589,
+      "3": 0.5175
+    }
+  },
+  "series": {
+    "rows": 9301,
+    "first": "1990-01-02",
+    "last": "2026-10-22"
+  },
+  "j1_reproduction_mean_loss": 0.036015204141157754,
+  "forward_peaks": [
+    {
+      "date": "2022-05-09",
+      "vix": 34.75
+    },
+    {
+      "date": "2022-06-13",
+      "vix": 34.02
+    },
+    {
+      "date": "2022-10-11",
+      "vix": 33.63
+    },
+    {
+      "date": "2022-12-12",
+      "vix": 25.0
+    },
+    {
+      "date": "2023-03-13",
+      "vix": 26.52
+    },
+    {
+      "date": "2024-08-05",
+      "vix": 38.57
+    },
+    {
+      "date": "2024-12-18",
+      "vix": 27.62
+    },
+    {
+      "date": "2025-03-10",
+      "vix": 27.86
+    },
+    {
+      "date": "2025-04-08",
+      "vix": 52.33
+    },
+    {
+      "date": "2025-10-16",
+      "vix": 25.31
+    },
+    {
+      "date": "2025-11-20",
+      "vix": 26.42
+    },
+    {
+      "date": "2026-03-06",
+      "vix": 29.49
+    },
+    {
+      "date": "2026-03-27",
+      "vix": 31.05
+    }
+  ],
+  "events": [
+    {
+      "peak_date": "2022-05-09",
+      "peak": 34.75,
+      "grade": 3,
+      "floor": 26.845,
+      "n": 780,
+      "days_ref": 4,
+      "arm1": {
+        "loss": 0.03824386045256236,
+        "mse": 0.03311565532435723,
+        "recovery": 0.005128205128205128,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.830466806356907,
+        "mse_closed": 0.03311565532435723,
+        "engine_wins": false,
+        "n_shocks": 42,
+        "shocks": [
+          {
+            "day_from_peak": -59,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -56,
+            "grade": 4
+          },
+          {
+            "day_from_peak": -55,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -35,
+            "grade": 4
+          },
+          {
+            "day_from_peak": -11,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 18,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 20,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 21,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 23,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 44,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 45,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 49,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 50,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 51,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 79,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 87,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 91,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 129,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 131,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 133,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 155,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 156,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 218,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 219,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 220,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 221,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 222,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 223,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 579,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 582,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 676,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 677,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 732,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 734,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 750,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 751,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 754,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 755,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 756,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 765,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 766,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 767,
+            "grade": 4
+          }
+        ],
+        "final_S": 468.5900002929495
+      }
+    },
+    {
+      "peak_date": "2022-06-13",
+      "peak": 34.02,
+      "grade": 3,
+      "floor": 25.555,
+      "n": 780,
+      "days_ref": 2,
+      "arm1": {
+        "loss": 0.0421978183244128,
+        "mse": 0.03450551063210511,
+        "recovery": 0.007692307692307693,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.7821271945675101,
+        "mse_closed": 0.03450551063210511,
+        "engine_wins": false,
+        "n_shocks": 38,
+        "shocks": [
+          {
+            "day_from_peak": -36,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -7,
+            "grade": 4
+          },
+          {
+            "day_from_peak": -5,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -4,
+            "grade": 4
+          },
+          {
+            "day_from_peak": -2,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 19,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 20,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 24,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 25,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 26,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 54,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 62,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 66,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 104,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 106,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 108,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 130,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 131,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 193,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 194,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 195,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 196,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 197,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 198,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 554,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 557,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 651,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 652,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 707,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 709,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 725,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 726,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 729,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 730,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 731,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 740,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 741,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 742,
+            "grade": 4
+          }
+        ],
+        "final_S": 296.4159293506723
+      }
+    },
+    {
+      "peak_date": "2022-10-11",
+      "peak": 33.63,
+      "grade": 3,
+      "floor": 24.57,
+      "n": 780,
+      "days_ref": 10,
+      "arm1": {
+        "loss": 0.033767871914657,
+        "mse": 0.031203769350554435,
+        "recovery": 0.002564102564102564,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.5962280196989393,
+        "mse_closed": 0.031203769350554435,
+        "engine_wins": false,
+        "n_shocks": 30,
+        "shocks": [
+          {
+            "day_from_peak": -32,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -24,
+            "grade": 4
+          },
+          {
+            "day_from_peak": -20,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 18,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 20,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 22,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 44,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 45,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 107,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 108,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 109,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 110,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 111,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 112,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 468,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 471,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 565,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 566,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 621,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 623,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 639,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 640,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 643,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 644,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 645,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 654,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 655,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 656,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 778,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 779,
+            "grade": 4
+          }
+        ],
+        "final_S": 103.52522939223545
+      }
+    },
+    {
+      "peak_date": "2022-12-12",
+      "peak": 25.0,
+      "grade": 3,
+      "floor": 25.869999999999997,
+      "n": 780,
+      "days_ref": 63,
+      "arm1": {
+        "loss": 0.789172759781621,
+        "mse": 0.7186599392688006,
+        "recovery": 0.07051282051282051,
+        "days_sim": 8,
+        "gate_loss": false,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.1341964357583576,
+        "mse_closed": 0.7186599392688006,
+        "engine_wins": true,
+        "n_shocks": 29,
+        "shocks": [
+          {
+            "day_from_peak": -26,
+            "grade": 4
+          },
+          {
+            "day_from_peak": -24,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -22,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 0,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 1,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 63,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 64,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 65,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 66,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 67,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 68,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 424,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 427,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 521,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 522,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 577,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 579,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 595,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 596,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 599,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 600,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 601,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 610,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 611,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 612,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 734,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 735,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 759,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 760,
+            "grade": 4
+          }
+        ],
+        "final_S": 102.42827778543584
+      }
+    },
+    {
+      "peak_date": "2023-03-13",
+      "peak": 26.52,
+      "grade": 3,
+      "floor": 20.43,
+      "n": 780,
+      "days_ref": 3,
+      "arm1": {
+        "loss": 0.06465279417618951,
+        "mse": 0.0582425377659331,
+        "recovery": 0.00641025641025641,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.3687755952134124,
+        "mse_closed": 0.0582425377659331,
+        "engine_wins": false,
+        "n_shocks": 30,
+        "shocks": [
+          {
+            "day_from_peak": 0,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 1,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 2,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 3,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 4,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 5,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 361,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 364,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 458,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 459,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 514,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 516,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 532,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 533,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 536,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 537,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 538,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 547,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 548,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 549,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 671,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 672,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 696,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 697,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 770,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 772,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 774,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 776,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 778,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 779,
+            "grade": 4
+          }
+        ],
+        "final_S": 104.36420914373313
+      }
+    },
+    {
+      "peak_date": "2024-08-05",
+      "peak": 38.57,
+      "grade": 3,
+      "floor": 12.805,
+      "n": 573,
+      "days_ref": 3,
+      "arm1": {
+        "loss": 0.04143474798089048,
+        "mse": 0.032708744490489085,
+        "recovery": 0.008726003490401396,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.29942519484513863,
+        "mse_closed": 0.032708744490489085,
+        "engine_wins": false,
+        "n_shocks": 28,
+        "shocks": [
+          {
+            "day_from_peak": 0,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 3,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 97,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 98,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 153,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 155,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 171,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 172,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 175,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 176,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 177,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 186,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 187,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 188,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 310,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 311,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 335,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 336,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 409,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 411,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 413,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 415,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 417,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 418,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 419,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 427,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 430,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 431,
+            "grade": 4
+          }
+        ],
+        "final_S": 78.16639340169344
+      }
+    },
+    {
+      "peak_date": "2024-12-18",
+      "peak": 27.62,
+      "grade": 3,
+      "floor": 16.54,
+      "n": 476,
+      "days_ref": 2,
+      "arm1": {
+        "loss": 0.09556612982761792,
+        "mse": 0.0829610878108112,
+        "recovery": 0.012605042016806723,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.3606760188921611,
+        "mse_closed": 0.0829610878108112,
+        "engine_wins": false,
+        "n_shocks": 26,
+        "shocks": [
+          {
+            "day_from_peak": 0,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 1,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 56,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 58,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 74,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 75,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 78,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 79,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 80,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 89,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 90,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 91,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 213,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 214,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 238,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 239,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 312,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 314,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 316,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 318,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 320,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 321,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 322,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 330,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 333,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 334,
+            "grade": 4
+          }
+        ],
+        "final_S": 57.2311781191455
+      }
+    },
+    {
+      "peak_date": "2025-03-10",
+      "peak": 27.86,
+      "grade": 3,
+      "floor": 16.485,
+      "n": 420,
+      "days_ref": 4,
+      "arm1": {
+        "loss": 0.07641033710287704,
+        "mse": 0.06688652757906752,
+        "recovery": 0.009523809523809525,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.38397453797720005,
+        "mse_closed": 0.06688652757906752,
+        "engine_wins": false,
+        "n_shocks": 26,
+        "shocks": [
+          {
+            "day_from_peak": -56,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -55,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 0,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 2,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 18,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 19,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 22,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 23,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 24,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 33,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 34,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 35,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 157,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 158,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 182,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 183,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 256,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 258,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 260,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 262,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 264,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 265,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 266,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 274,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 277,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 278,
+            "grade": 4
+          }
+        ],
+        "final_S": 57.2311781191455
+      }
+    },
+    {
+      "peak_date": "2025-04-08",
+      "peak": 52.33,
+      "grade": 2,
+      "floor": 18.475,
+      "n": 399,
+      "days_ref": 1,
+      "arm1": {
+        "loss": 0.025468884772637056,
+        "mse": 0.01544382211599545,
+        "recovery": 0.010025062656641603,
+        "days_sim": 5,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.4665412938398968,
+        "mse_closed": 0.01544382211599545,
+        "engine_wins": false,
+        "n_shocks": 24,
+        "shocks": [
+          {
+            "day_from_peak": -21,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -19,
+            "grade": 4
+          },
+          {
+            "day_from_peak": -3,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -2,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 1,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 2,
+            "grade": 2
+          },
+          {
+            "day_from_peak": 3,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 12,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 13,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 14,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 136,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 137,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 161,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 162,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 235,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 237,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 239,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 241,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 243,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 244,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 245,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 253,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 256,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 257,
+            "grade": 4
+          }
+        ],
+        "final_S": 41.16341787560406
+      }
+    },
+    {
+      "peak_date": "2025-10-16",
+      "peak": 25.31,
+      "grade": 3,
+      "floor": 15.850000000000001,
+      "n": 263,
+      "days_ref": 2,
+      "arm1": {
+        "loss": 0.11207738513442382,
+        "mse": 0.08926369692149606,
+        "recovery": 0.022813688212927757,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.3168918069525036,
+        "mse_closed": 0.08926369692149606,
+        "engine_wins": false,
+        "n_shocks": 14,
+        "shocks": [
+          {
+            "day_from_peak": 0,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 1,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 25,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 26,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 99,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 101,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 103,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 105,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 107,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 108,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 109,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 117,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 120,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 121,
+            "grade": 4
+          }
+        ],
+        "final_S": 23.26848628320655
+      }
+    },
+    {
+      "peak_date": "2025-11-20",
+      "peak": 26.42,
+      "grade": 3,
+      "floor": 16.645,
+      "n": 238,
+      "days_ref": 2,
+      "arm1": {
+        "loss": 0.10983014665743049,
+        "mse": 0.08462006262381705,
+        "recovery": 0.025210084033613446,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.38033058234857886,
+        "mse_closed": 0.08462006262381705,
+        "engine_wins": false,
+        "n_shocks": 14,
+        "shocks": [
+          {
+            "day_from_peak": -25,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -24,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 0,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 1,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 74,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 76,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 78,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 80,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 82,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 83,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 84,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 92,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 95,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 96,
+            "grade": 4
+          }
+        ],
+        "final_S": 23.26848628320655
+      }
+    },
+    {
+      "peak_date": "2026-03-06",
+      "peak": 29.49,
+      "grade": 3,
+      "floor": 16.810000000000002,
+      "n": 164,
+      "days_ref": 7,
+      "arm1": {
+        "loss": 0.04445046068937432,
+        "mse": 0.038352899713764564,
+        "recovery": 0.006097560975609756,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.3501416568433051,
+        "mse_closed": 0.038352899713764564,
+        "engine_wins": false,
+        "n_shocks": 10,
+        "shocks": [
+          {
+            "day_from_peak": 0,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 2,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 4,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 6,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 8,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 9,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 10,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 18,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 21,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 22,
+            "grade": 4
+          }
+        ],
+        "final_S": 10.048624124725754
+      }
+    },
+    {
+      "peak_date": "2026-03-27",
+      "peak": 31.05,
+      "grade": 3,
+      "floor": 19.32,
+      "n": 149,
+      "days_ref": 3,
+      "arm1": {
+        "loss": 0.09454335195479706,
+        "mse": 0.06098630497493129,
+        "recovery": 0.03355704697986577,
+        "days_sim": 8,
+        "gate_loss": true,
+        "gate_rec": true
+      },
+      "arm2": {
+        "mse_engine": 0.44415328440980867,
+        "mse_closed": 0.06098630497493129,
+        "engine_wins": false,
+        "n_shocks": 10,
+        "shocks": [
+          {
+            "day_from_peak": -15,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -13,
+            "grade": 4
+          },
+          {
+            "day_from_peak": -11,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -9,
+            "grade": 4
+          },
+          {
+            "day_from_peak": -7,
+            "grade": 3
+          },
+          {
+            "day_from_peak": -6,
+            "grade": 4
+          },
+          {
+            "day_from_peak": -5,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 3,
+            "grade": 4
+          },
+          {
+            "day_from_peak": 6,
+            "grade": 3
+          },
+          {
+            "day_from_peak": 7,
+            "grade": 4
+          }
+        ],
+        "final_S": 10.048624124725754
+      }
+    }
+  ],
+  "arm1_mean_loss": 0.12060127298226853,
+  "arm1_verdict": "FAIL",
+  "arm2_verdict": "FAIL"
+}
