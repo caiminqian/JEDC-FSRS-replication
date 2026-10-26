@@ -9,11 +9,12 @@ from dataclasses import dataclass, field
 
 
 # FSRS-6 预训练核心参数 (Anki 数据训练)
+# v55: J1 joint fit (was Anki defaults)
 FSRS_DEFAULT_PARAMS = {
-    "w17": 1.8729,
-    "w18": 0.5425,
-    "w19": 0.0912,
-    "w20": 0.0658,
+    "w17": 0.6096,
+    "w18": 0.0496,
+    "w19": 0.1841,
+    "w20": 0.4,
 }
 
 
@@ -160,35 +161,36 @@ class FSRSMemoryBank:
     """
     
     # 预定义教训模板 (S 初始值基于 tick-based 校准)
+    # v55: rescaled /6.67 (J1 S0*=0.5 vs loaded mean 3.33)
     LESSONS = {
         "leverage_risk": {
             "name": "高杠杆导致爆仓",
             "category": "risk",
-            "initial_S": 5.0,    # 散户初始记忆弱
+            "initial_S": 0.75,    # 散户初始记忆弱
             "difficulty": 6.0
         },
         "liquidity_crisis": {
             "name": "流动性枯竭无法退出",
             "category": "risk",
-            "initial_S": 3.0,    # 抽象概念更难记
+            "initial_S": 0.45,    # 抽象概念更难记
             "difficulty": 7.0
         },
         "bull_market_complacency": {
             "name": "长期牛市过度自信",
             "category": "strategy",
-            "initial_S": 2.0,    # 牛市期间最易遗忘
+            "initial_S": 0.30,    # 牛市期间最易遗忘
             "difficulty": 4.0
         },
         "panic_selling": {
             "name": "恐慌性抛售在地板价",
             "category": "behavior",
-            "initial_S": 4.0,
+            "initial_S": 0.60,
             "difficulty": 5.0
         },
         "regulation_change": {
             "name": "政策突变风险",
             "category": "regulation",
-            "initial_S": 15.0,   # 监管教训相对持久
+            "initial_S": 2.25,   # 监管教训相对持久
             "difficulty": 8.0
         }
     }
