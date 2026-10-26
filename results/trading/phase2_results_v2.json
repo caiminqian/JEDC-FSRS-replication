@@ -1,0 +1,474 @@
+{
+ "version": "v2 (sim_tick fix, user-approved 2026-10-26)",
+ "variant_script": "phase2/phase2_trading_sim_v2.py (diff vs v1: header note + sim_tick sync block only)",
+ "source": "Reused phase2_prices.json (Yahoo Finance chart API adjclose, verified in v1); no refetch",
+ "windows": {
+  "W1": "2020-02-03 to 2020-12-31 (232 NYSE days)",
+  "W2": "2022-01-03 to 2022-12-30 (251 NYSE days)"
+ },
+ "shock_days": {
+  "W1": {
+   "count": 30,
+   "grade_dist": {
+    "3": 14,
+    "2": 7,
+    "1": 1,
+    "4": 8
+   },
+   "days": [
+    [
+     "2020-02-24",
+     3
+    ],
+    [
+     "2020-02-28",
+     2
+    ],
+    [
+     "2020-03-02",
+     3
+    ],
+    [
+     "2020-03-06",
+     2
+    ],
+    [
+     "2020-03-16",
+     1
+    ],
+    [
+     "2020-03-17",
+     2
+    ],
+    [
+     "2020-04-14",
+     3
+    ],
+    [
+     "2020-04-15",
+     2
+    ],
+    [
+     "2020-04-17",
+     3
+    ],
+    [
+     "2020-04-20",
+     2
+    ],
+    [
+     "2020-04-24",
+     3
+    ],
+    [
+     "2020-06-05",
+     4
+    ],
+    [
+     "2020-06-08",
+     3
+    ],
+    [
+     "2020-06-11",
+     2
+    ],
+    [
+     "2020-06-12",
+     3
+    ],
+    [
+     "2020-07-20",
+     4
+    ],
+    [
+     "2020-07-23",
+     3
+    ],
+    [
+     "2020-07-27",
+     4
+    ],
+    [
+     "2020-07-28",
+     3
+    ],
+    [
+     "2020-07-29",
+     4
+    ],
+    [
+     "2020-08-31",
+     3
+    ],
+    [
+     "2020-10-28",
+     2
+    ],
+    [
+     "2020-10-29",
+     3
+    ],
+    [
+     "2020-11-06",
+     4
+    ],
+    [
+     "2020-11-09",
+     3
+    ],
+    [
+     "2020-11-10",
+     4
+    ],
+    [
+     "2020-11-12",
+     3
+    ],
+    [
+     "2020-11-13",
+     4
+    ],
+    [
+     "2020-12-21",
+     3
+    ],
+    [
+     "2020-12-22",
+     4
+    ]
+   ]
+  },
+  "W2": {
+   "count": 24,
+   "grade_dist": {
+    "3": 12,
+    "4": 12
+   },
+   "days": [
+    [
+     "2022-01-20",
+     3
+    ],
+    [
+     "2022-01-31",
+     4
+    ],
+    [
+     "2022-02-11",
+     3
+    ],
+    [
+     "2022-02-16",
+     4
+    ],
+    [
+     "2022-02-17",
+     3
+    ],
+    [
+     "2022-03-18",
+     4
+    ],
+    [
+     "2022-04-22",
+     3
+    ],
+    [
+     "2022-06-02",
+     4
+    ],
+    [
+     "2022-06-06",
+     3
+    ],
+    [
+     "2022-06-07",
+     4
+    ],
+    [
+     "2022-06-09",
+     3
+    ],
+    [
+     "2022-07-08",
+     4
+    ],
+    [
+     "2022-07-11",
+     3
+    ],
+    [
+     "2022-07-15",
+     4
+    ],
+    [
+     "2022-07-18",
+     3
+    ],
+    [
+     "2022-07-19",
+     4
+    ],
+    [
+     "2022-08-26",
+     3
+    ],
+    [
+     "2022-09-07",
+     4
+    ],
+    [
+     "2022-09-13",
+     3
+    ],
+    [
+     "2022-11-04",
+     4
+    ],
+    [
+     "2022-11-08",
+     3
+    ],
+    [
+     "2022-11-10",
+     4
+    ],
+    [
+     "2022-12-12",
+     3
+    ],
+    [
+     "2022-12-13",
+     4
+    ]
+   ]
+  }
+ },
+ "matrix": {
+  "W1|FSRS": {
+   "pnl": 248162.3,
+   "dd_e2e20": 0.0916,
+   "dd_daily": 0.1921,
+   "sharpe": 2.4872,
+   "trades": 139,
+   "buys": 66,
+   "sells": 73,
+   "symbols": [
+    "BTC"
+   ],
+   "final": 498162.3,
+   "final_btc_qty": 16.035687,
+   "final_cash": 33099.8,
+   "others_zero_trades": true
+  },
+  "W1|EE": {
+   "pnl": 462906.96,
+   "dd_e2e20": 0.1626,
+   "dd_daily": 0.2779,
+   "sharpe": 2.5202,
+   "trades": 108,
+   "buys": 87,
+   "sells": 21,
+   "symbols": [
+    "BTC"
+   ],
+   "final": 712906.96,
+   "final_btc_qty": 23.017834,
+   "final_cash": 45350.19,
+   "others_zero_trades": true
+  },
+  "W2|FSRS": {
+   "pnl": -131254.21,
+   "dd_e2e20": 0.5524,
+   "dd_daily": 0.5753,
+   "sharpe": -1.2899,
+   "trades": 98,
+   "buys": 83,
+   "sells": 15,
+   "symbols": [
+    "BTC"
+   ],
+   "final": 118745.79,
+   "final_btc_qty": 6.997722,
+   "final_cash": 2565.47,
+   "others_zero_trades": true
+  },
+  "W2|EE": {
+   "pnl": -126320.68,
+   "dd_e2e20": 0.544,
+   "dd_daily": 0.5638,
+   "sharpe": -1.2707,
+   "trades": 108,
+   "buys": 91,
+   "sells": 17,
+   "symbols": [
+    "BTC"
+   ],
+   "final": 123679.32,
+   "final_btc_qty": 6.546076,
+   "final_cash": 14997.5,
+   "others_zero_trades": true
+  },
+  "W1|BH": {
+   "pnl": 477684.08,
+   "dd_daily": 0.4788,
+   "sharpe": 2.1021,
+   "trades": 3,
+   "final": 727684.08
+  },
+  "W1|CASH": {
+   "pnl": 0.0,
+   "dd_daily": 0.0,
+   "sharpe": null,
+   "trades": 0,
+   "final": 250000.0
+  },
+  "W2|BH": {
+   "pnl": -133934.71,
+   "dd_daily": 0.5436,
+   "sharpe": -1.2794,
+   "trades": 3,
+   "final": 116065.29
+  },
+  "W2|CASH": {
+   "pnl": 0.0,
+   "dd_daily": 0.0,
+   "sharpe": null,
+   "trades": 0,
+   "final": 250000.0
+  }
+ },
+ "probe_risk_R_W1": {
+  "note": "Replay with v2 sim_tick (act skipped; risk_R is memory-only so values equal the real run). Sampled-only vs every-tick probe gave identical risk_R.",
+  "FSRS": {
+   "0": [
+    "2020-02-03",
+    1.0
+   ],
+   "13": [
+    "2020-02-21",
+    0.431
+   ],
+   "14": [
+    "2020-02-24 first shock G3",
+    1.0
+   ],
+   "28": [
+    "2020-03-13",
+    0.391
+   ],
+   "29": [
+    "2020-03-16 G1",
+    1.0
+   ],
+   "30": [
+    "2020-03-17 G2 shock",
+    1.0
+   ],
+   "32": [
+    "2020-03-19",
+    0.4585
+   ],
+   "36": [
+    "2020-03-25",
+    0.3074
+   ],
+   "43": [
+    "2020-04-03",
+    0.2283
+   ],
+   "59": [
+    "2020-04-28",
+    0.4658
+   ],
+   "100": [
+    "2020-06-25",
+    0.3031
+   ],
+   "231": [
+    "2020-12-31",
+    0.9327
+   ]
+  },
+  "EE": {
+   "0": [
+    "2020-02-03",
+    1.0
+   ],
+   "13": [
+    "2020-02-21",
+    0.7491
+   ],
+   "14": [
+    "2020-02-24 first shock G3",
+    1.0
+   ],
+   "28": [
+    "2020-03-13",
+    0.8957
+   ],
+   "29": [
+    "2020-03-16 G1",
+    1.0
+   ],
+   "30": [
+    "2020-03-17 G2 shock",
+    1.0
+   ],
+   "32": [
+    "2020-03-19",
+    0.9578
+   ],
+   "36": [
+    "2020-03-25",
+    0.8786
+   ],
+   "43": [
+    "2020-04-03",
+    0.7554
+   ],
+   "59": [
+    "2020-04-28",
+    0.9582
+   ],
+   "100": [
+    "2020-06-25",
+    0.8261
+   ],
+   "231": [
+    "2020-12-31",
+    0.8885
+   ]
+  }
+ },
+ "verification": {
+  "variant_diff": "diff v1 vs v2: header note (3 lines) + sim_tick sync block in run() step 2b (for wrapper in agents: wrapper.agent.sim_tick = tick) + one trailing-whitespace normalization; no other change",
+  "frozen_params": "v2 retains v1 assertions (FSRS_DEFAULT_PARAMS == w17 0.6096/w18 0.0496/w19 0.1841/w20 0.4; LESSONS initial_S == 0.75/0.45/0.30); all 8 runs (4 + 4 determinism) rc=0, assertions passed",
+  "bh_cash_control": "Recomputed BH finals match v1 exactly both windows (727684.08 / 116065.29); cash 250000 trivially matches -> no unintended pipeline change",
+  "shock_day_recompute": "Independent recompute from pack vixcls.csv: W1 30, W2 24, identical to prices file and v2 run shock_days",
+  "reconstruction": "Daily portfolio series rebuilt from trade tape + prices reproduces all 4 human finals AND both BH finals to the cent; BH Sharpe/dd_daily also match v1 exactly (2.1021/0.4788; -1.2794/0.5436), confirming the Sharpe method (daily returns, population std, sqrt(252), rf=0, node-price valuation)",
+  "determinism": "FSRS run vs run2 bit-identical (agents + tape). EE run vs run2: decisions identical (108 trades, same tick/symbol/side/price); quantities differ <=9e-9 absolute, final PnL differs $0.0003 (4e-10 relative) -> decision-level deterministic, value-level float noise only",
+  "ee_float_noise_root_cause": "EE wall-clock leakage: SIM_START = datetime.now() at human_agent import + EconomicMemory.last_shock_time default = datetime.now() at construction. EE t (and hence R, S) therefore varies ~1e-10 across processes. FSRS is tick-based and unaffected. v1 hid this because pinning clamped EE R to 1.0 exactly. Magnitude negligible vs FSRS-EE gaps ($214,745 W1; $4,934 W2)",
+  "sharpe_method": "Daily portfolio values from trade tape + prices (positions at round(close,2)); returns = v_t/v_{t-1}-1; Sharpe = mean/std(ddof=0)*sqrt(252), rf=0; dd_daily = max peak-to-trough of daily series; dd_e2e20 = run max_drawdown (20-tick sampling, as v1 headline)"
+ },
+ "corrections_to_v1_report": [
+  "v1 delivered run JSONs contain neither trade_history nor daily_values although the v1 _collect code includes the tape field -> v1 dd_daily/Sharpe were not re-derivable from delivered files. v2 run files DO contain the full tape (139/108/98/108 entries).",
+  "v1 determinism claim ('identical on all numeric fields') holds only under pinning; unpinned EE has ~1e-10 wall-clock noise (root-caused above, negligible). FSRS remains bit-identical.",
+  "No change to v1 headline numbers (PnL/DD/trades/BH/cash): all re-verified (BH exact; human v1 numbers stand as the pinned-run record)."
+ ],
+ "execution_location": "sandbox (PYTHONPATH repo src); prices reused, no refetch, no dao",
+ "files": [
+  "phase2/phase2_trading_sim_v2.py",
+  "phase2/phase2_results_v2.json",
+  "phase2/phase2_matrix_v2.json",
+  "phase2/run_W1_FSRS_v2.json",
+  "phase2/run_W1_EE_v2.json",
+  "phase2/run_W2_FSRS_v2.json",
+  "phase2/run_W2_EE_v2.json",
+  "phase2/run2_W1_FSRS_v2.json",
+  "phase2/run2_W1_EE_v2.json",
+  "phase2/run2_W2_FSRS_v2.json",
+  "phase2/run2_W2_EE_v2.json",
+  "phase2/probe_risk.py"
+ ]
+}

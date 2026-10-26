@@ -1,0 +1,94 @@
+{
+ "W1|FSRS": {
+  "pnl": 248162.3,
+  "dd_e2e20": 0.0916,
+  "dd_daily": 0.1921,
+  "sharpe": 2.4872,
+  "trades": 139,
+  "buys": 66,
+  "sells": 73,
+  "symbols": [
+   "BTC"
+  ],
+  "final": 498162.3,
+  "final_btc_qty": 16.035687,
+  "final_cash": 33099.8,
+  "others_zero_trades": true
+ },
+ "W1|EE": {
+  "pnl": 462906.96,
+  "dd_e2e20": 0.1626,
+  "dd_daily": 0.2779,
+  "sharpe": 2.5202,
+  "trades": 108,
+  "buys": 87,
+  "sells": 21,
+  "symbols": [
+   "BTC"
+  ],
+  "final": 712906.96,
+  "final_btc_qty": 23.017834,
+  "final_cash": 45350.19,
+  "others_zero_trades": true
+ },
+ "W2|FSRS": {
+  "pnl": -131254.21,
+  "dd_e2e20": 0.5524,
+  "dd_daily": 0.5753,
+  "sharpe": -1.2899,
+  "trades": 98,
+  "buys": 83,
+  "sells": 15,
+  "symbols": [
+   "BTC"
+  ],
+  "final": 118745.79,
+  "final_btc_qty": 6.997722,
+  "final_cash": 2565.47,
+  "others_zero_trades": true
+ },
+ "W2|EE": {
+  "pnl": -126320.68,
+  "dd_e2e20": 0.544,
+  "dd_daily": 0.5638,
+  "sharpe": -1.2707,
+  "trades": 108,
+  "buys": 91,
+  "sells": 17,
+  "symbols": [
+   "BTC"
+  ],
+  "final": 123679.32,
+  "final_btc_qty": 6.546076,
+  "final_cash": 14997.5,
+  "others_zero_trades": true
+ },
+ "W1|BH": {
+  "pnl": 477684.08,
+  "dd_daily": 0.4788,
+  "sharpe": 2.1021,
+  "trades": 3,
+  "final": 727684.08
+ },
+ "W1|CASH": {
+  "pnl": 0.0,
+  "dd_daily": 0.0,
+  "sharpe": null,
+  "trades": 0,
+  "final": 250000.0
+ },
+ "W2|BH": {
+  "pnl": -133934.71,
+  "dd_daily": 0.5436,
+  "sharpe": -1.2794,
+  "trades": 3,
+  "final": 116065.29
+ },
+ "W2|CASH": {
+  "pnl": 0.0,
+  "dd_daily": 0.0,
+  "sharpe": null,
+  "trades": 0,
+  "final": 250000.0
+ }
+}

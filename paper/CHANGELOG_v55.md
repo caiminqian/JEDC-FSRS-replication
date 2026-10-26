@@ -154,3 +154,11 @@
 - Arm 2 多冲击动力学（fsrs_memory 类单课抽象，S0=0.5，等级变化日冲击）：引擎 1/13 胜（MSE 0.13–0.83 vs 闭式 0.015–0.089；唯一胜为倒置参考上的空胜）→ FAIL，实质阴性（冲击当天 R=1.0 致锯齿轨迹）；不否定 J1 参数、不触动 §5.8 B 线。
 - 联动改动：摘要 +1 句；结论 "Two v55 chapters" → "Three v55 chapters" + §5.9 句；限制 5 加 (v55 backtest update) 句；新增限制 24（扫描 admissibility）、25（引擎 R 轨迹范围）；§6.5 实测方向 bullet 更新。Appendix A 本次未动（回测文件进 dao pack 在同步时再计，与清理口径一致）。
 - 归档（仓库，未提交）：`experiments/backtest/backtest_v1.py`、`results/backtest/backtest_results.json`（与 jedc_pack 原件 SHA256 一致）；工作稿仍为 v55（沿 sweep/stress 的就地编辑惯例，未改名 v56）。
+
+## 22. Phase 2 真实价格交易回测写进稿子（2026-10-26，用户批准）
+
+- 新增 §5.10（E2E 的真实数据版，除价格与冲击时序外一切照抄）：Yahoo adjclose（Stooq 被机器人验证挡），W1 2020-02-03→2020-12-31（232 NYSE 日，30 冲击日 G1×1/G2×7/G3×14/G4×8）+ W2 2022-01-03→2022-12-30（251 NYSE 日，24 冲击日 G3×12/G4×12）；比较组 FSRS human / EE human（severity=当日等权组合跌幅绝对值上限 0.40、quality 固定 4）/ 等权 buy-and-hold / 现金。
+- v1 钉住发现：交易脚本从不设 sim_tick，decide() 以 tick=0 评估记忆，get_retrievability 在 t≤0 时恒返 1.0，故 risk_R 钉住、FSRS vs EE 逐分钱相同（W1 +$567,963.92/68 笔，W2 −$134,414.84/88 笔）；v1 运行 JSON 无交易带，故 v1 的 dd_daily/Sharpe 无法从交付文件复算。
+- v2 解钉（批准的一行修正，照抄 ecos_env.py:144）：W1 FSRS +$248,162.30/139 笔（66 买/73 卖）vs EE +$462,906.96/108 笔（87 买/21 卖），差 $214,744.66；W2 FSRS −$131,254.21/98 笔 vs EE −$126,320.68/108 笔，差 $4,933.53；首次出现卖出；risk_R 探针证实解钉（冲击后 FSRS 衰减到 0.23–0.47、EE 维持 0.75–0.96）；BH 与现金与 v1 逐位一致；EE 有 1e-10 wall-clock 噪声（两遍跑 PnL 差 $0.0003），FSRS 逐位一致。
+- 归因改写：§5.6.1“反转来自内核与 bank 变化”句撤回（R 钉住时内核/bank 动不了交易，真因须另查两版交易链路代码差，未做）；§5.2 的 k 敏感句与限制 20 同步修正；§5.6.1 的 v55 E2E 数定性为钉住版记录。附带：归档 E2E 脚本本身跑不起来（randint 非法 kwarg），变体只删 kwarg；是否修归档脚本未定。
+- 联动：摘要 +1 句；结论 Four v55 chapters + §5.10 句。归档（仓库，未提交）：`experiments/trading/run_realdata_trading_simulation.py`（v2 脚本）、`results/trading/phase2_results_v2.json`、`phase2_matrix_v2.json`、`phase2_prices.json`（与 jedc_pack 原件 SHA256 一致）；v1 文件留工作目录，v1 headline 数已写进 §5.10 表。Appendix A 本次未动（Phase 2 文件计数在同步时再改，与 §5.9 口径一致）。
