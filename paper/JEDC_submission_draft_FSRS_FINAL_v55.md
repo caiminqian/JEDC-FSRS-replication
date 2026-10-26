@@ -165,11 +165,11 @@ r_t = 10·avg_R                                    # Dense term
 
 This reward encourages maintaining avg_R in [0.5, 0.7] while penalizing both danger and complacency zones. The **intervention bonus** directly incentivizes acting when risk perception is already low (pre_avg_R < 0.5), overcoming the RL exploration trap.
 
-**Table: grade impact (formula values).** The table in Section 3.3 above gives the exact multipliers. Figure 5 in v43 is withdrawn in v44: its generation script used the parameter list $[w_{17}, w_{18}, w_{19}, w_{20}]$ indexed by grade as the exponent, which is not the stability-update formula, so neither the figure nor its caption can be retained. Replacement figure (v47):
+**Table: grade impact (formula values).** The table in Section 3.3 above gives the exact multipliers. Figure 5 in v43 is withdrawn in v44: its generation script used the parameter list $[w_{17}, w_{18}, w_{19}, w_{20}]$ indexed by grade as the exponent, which is not the stability-update formula, so neither the figure nor its caption can be retained. Replacement figure (v55):
 
-![Correct FSRS grade impact](figures/fig5_grade_impact_v47.png){#fig:grade_impact_v47 width=90%}
+![Correct FSRS grade impact](figures/fig5_grade_impact_v55.png){#fig:grade_impact_v55 width=90%}
 
-**Figure 5 (v47).** Correct stability update $S' = S \cdot \exp(w_{17} \cdot (G - 3 + w_{18}) \cdot S^{-w_{19}})$ with $w_{17}=0.6096$, $w_{18}=0.0496$, $w_{19}=0.1841$. Panel (a): multiplier $S'/S$ vs initial $S$ (log scale); panel (b): multiplier vs grade $G$ at $S=5, 45, 1000$. Values match the table exactly (at $S=45$: 0.554 / 0.750 / 1.015 / 1.374 for $G=1$ to $4$). The v47 PNG was rendered from the Anki parameters and is stale under v55; it is retained pending regeneration from the new parameters (script `experiments/figure_generation/fig5_v47.py`). Script: `experiments/figure_generation/fig5_v47.py`. The v43 figure remains withdrawn; this is a new figure, not a correction of the old file.
+**Figure 5 (v55).** Correct stability update $S' = S \cdot \exp(w_{17} \cdot (G - 3 + w_{18}) \cdot S^{-w_{19}})$ with $w_{17}=0.6096$, $w_{18}=0.0496$, $w_{19}=0.1841$. Panel (a): multiplier $S'/S$ vs initial $S$ (log scale); panel (b): multiplier vs grade $G$ at $S=5, 45, 1000$. Values match the table exactly (at $S=45$: 0.554 / 0.750 / 1.015 / 1.374 for $G=1$ to $4$). Regenerated under v55 from the J1 parameters (script `experiments/figure_generation/fig5_v55.py`). The v43 figure remains withdrawn; this is a new figure, not a correction of the old file.
 
 ---
 
@@ -448,9 +448,9 @@ We extended simulation to **3650 ticks** (~10 years) with 8 runs per engine.
 - **EE decay**: mean final $R$ = **0.9074** (reference) and **0.9351** (population)
 - **Trajectory divergence**: by tick 3650 the reference gap is **0.0448** absolute (0.9522 − 0.9074) and the population gap is **0.0280** (0.9631 − 0.9351). Intermediate tick-500 values for the 10-year run are not in the archived summary file and are not claimed in v44. Setup (fills the missing detail): 8 runs, seeds 200–207, 3650 ticks, sample every 50 ticks, shock_prob 0.02, severity range [0.15, 0.4], markets BTC/ETH/AAPL/SPY. Reference detail (v55): FSRS mean 0.9522 ± 0.0587, range [0.8039, 0.9946]; EE mean 0.9074 ± 0.1222, range [0.6010, 0.9903]. Mechanism (v55, superseding the v54 saturation account): under the recalibrated kernel, FSRS stability no longer saturates the 10-year trajectories at the 36500-day cap, so the 10-year gap now discriminates the kernel; the v54 saturation qualifier is superseded. The two protocols must not be mixed.
 
-![FSRS vs EE comparison (10-year horizon)](figures/fig6_fsrs_vs_ee_10year.png){#fig:fsrs_vs_ee_10year width=90%}
+![FSRS vs EE comparison (10-year horizon)](figures/fig6_fsrs_vs_ee_10year_v55.png){#fig:fsrs_vs_ee_10year width=90%}
 
-**Figure 6.** FSRS vs EE retrievability over 3650 ticks. EE decays to R=0.907 by year 10 (reference protocol); FSRS maintains R=0.952 (reference) and 0.963 (population). The v54 PNG shows the old saturated trajectories and is stale under v55; it is retained pending regeneration. The power-law fat tail keeps memory persistent, but under the recalibrated kernel it no longer saturates within the 10-year horizon.
+**Figure 6.** FSRS vs EE retrievability over 3650 ticks. EE decays to R=0.907 by year 10 (reference protocol); FSRS maintains R=0.952 (reference) and 0.963 (population). Regenerated under v55 from the A-10y reference runs (script `experiments/figure_generation/fig6_v55.py`). The power-law fat tail keeps memory persistent, but under the recalibrated kernel it no longer saturates within the 10-year horizon.
 
 The 10-year result still supports our core claim: **exponential forgetting underestimates long-term memory persistence**. Even after a decade, FSRS agents retain higher risk awareness (R=0.952 reference, 0.963 population) than EE agents (0.907 reference, 0.935 population). This gap has material implications for leverage cycles and crisis recurrence — with the v55 qualification that the gap is smaller than the saturated v54 figure and now discriminates the kernel rather than reflecting a cap artifact.
 
