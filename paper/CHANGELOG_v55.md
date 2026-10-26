@@ -140,3 +140,10 @@
 ## Adjudication fixes (2026-10-26, parent review)
 - E2E old values added in-text in Section 5.6.1 (v54: +$7,091.30, 35.7%, 51 trades): a labeled historical comparison is not a stale number; the zero-anchor rule applies to unlabeled values.
 - Section 5.6.2 Monte Carlo table labeled as the archived original-protocol result; v55 rerun numbers are in the paragraph following the table (reference 0.9094, population 0.9140 in Section 5.7).
+
+## 20. Figure 5/6 v55 重生成（事后补记，2026-10-26）
+
+- Figure 5：新脚本 `experiments/figure_generation/fig5_v55.py`（J1 参数 0.6096/0.0496/0.1841；v47 脚本未动）；输出 `figures/fig5_grade_impact_v55.png`（148,282 字节，SHA256 `a924b411…`）；S=45 乘数 [0.554, 0.750, 1.015, 1.374] 与 §3.3 表一致；旧 PNG 保留。
+- Figure 6：仓库原无可用生成脚本（`generate_all_figures.py` 无 fig6、含 mock 数据、OUT_DIR 错误，未跑）；新脚本 `experiments/figure_generation/fig6_v55.py` 按已发图 4 面板结构重建，数据源 v55 A-10y 参考运行（8 对，seeds 200–207）；输出 `figures/fig6_fsrs_vs_ee_10year_v55.png`（261,039 字节，SHA256 `544ccdcb…`）；FSRS 0.9522 / EE 0.9074 / 差 0.0448 与 stage1 报告一致；横轴修正（旧图 0–72 是 fallback 采样序号却标 Day，v55 用真实 tick 0–3600）。
+- 稿改动 5 处（链接×2、caption×2、(v47)→(v55)），diff 已核无其他改动；dao 5/5 哈希一致；GitHub 提交 515b67f。
+- 附：Appendix A 的 bank 文件数在本次清理中由 2 改为 4（2 JSON + 2 dao 日志），与实传文件一致；§17 的起草记录行保留原貌。
