@@ -1,0 +1,83 @@
+{
+  "config": {
+    "n_agents": 1000,
+    "max_ticks": 1000,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "S_override": 45.0,
+    "policies": {
+      "baseline": [
+        0.3,
+        0.6
+      ],
+      "comparison": [
+        0.55,
+        0.2
+      ]
+    }
+  },
+  "baseline": {
+    "avg_return": 8356.240234375,
+    "std_return": 0.0,
+    "avg_interventions": 0.0,
+    "avg_crisis": 0.0,
+    "avg_zone_pct": 48.1,
+    "min_return": 8356.240234375,
+    "max_return": 8356.240234375,
+    "per_episode_returns": [
+      8356.240234375,
+      8356.240234375,
+      8356.240234375
+    ],
+    "per_episode_interventions": [
+      0,
+      0,
+      0
+    ],
+    "per_episode_zone_pct": [
+      48.1,
+      48.1,
+      48.1
+    ],
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "runtime_s": 643.8515019416809
+  },
+  "comparison": {
+    "avg_return": 15090.353515625,
+    "std_return": 0.0,
+    "avg_interventions": 1.0,
+    "avg_crisis": 0.0,
+    "avg_zone_pct": 56.8,
+    "min_return": 15090.353515625,
+    "max_return": 15090.353515625,
+    "per_episode_returns": [
+      15090.353515625,
+      15090.353515625,
+      15090.353515625
+    ],
+    "per_episode_interventions": [
+      1,
+      1,
+      1
+    ],
+    "per_episode_zone_pct": [
+      56.8,
+      56.8,
+      56.8
+    ],
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "runtime_s": 657.7648370265961
+  },
+  "improvement": 6734.11328125
+}
