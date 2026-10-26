@@ -162,3 +162,10 @@
 - v2 解钉（批准的一行修正，照抄 ecos_env.py:144）：W1 FSRS +$248,162.30/139 笔（66 买/73 卖）vs EE +$462,906.96/108 笔（87 买/21 卖），差 $214,744.66；W2 FSRS −$131,254.21/98 笔 vs EE −$126,320.68/108 笔，差 $4,933.53；首次出现卖出；risk_R 探针证实解钉（冲击后 FSRS 衰减到 0.23–0.47、EE 维持 0.75–0.96）；BH 与现金与 v1 逐位一致；EE 有 1e-10 wall-clock 噪声（两遍跑 PnL 差 $0.0003），FSRS 逐位一致。
 - 归因改写：§5.6.1“反转来自内核与 bank 变化”句撤回（R 钉住时内核/bank 动不了交易，真因须另查两版交易链路代码差，未做）；§5.2 的 k 敏感句与限制 20 同步修正；§5.6.1 的 v55 E2E 数定性为钉住版记录。附带：归档 E2E 脚本本身跑不起来（randint 非法 kwarg），变体只删 kwarg；是否修归档脚本未定。
 - 联动：摘要 +1 句；结论 Four v55 chapters + §5.10 句。归档（仓库，未提交）：`experiments/trading/run_realdata_trading_simulation.py`（v2 脚本）、`results/trading/phase2_results_v2.json`、`phase2_matrix_v2.json`、`phase2_prices.json`（与 jedc_pack 原件 SHA256 一致）；v1 文件留工作目录，v1 headline 数已写进 §5.10 表。Appendix A 本次未动（Phase 2 文件计数在同步时再改，与 §5.9 口径一致）。
+
+## 23. 归档 E2E 脚本另存修复版（2026-10-26，用户批准选项 B）
+
+- 原档 `experiments/trading/run_full_trading_simulation.py` 原样跑不起来（`rng.randint(..., rng=rng)` 非法关键字，建 agent 即崩），按评估报告建议执行选项 B：原档不动，新增 `experiments/trading/run_full_trading_simulation_fixed.py`。
+- 修复版与原档的 diff 仅三处：文件头注释（说明修复内容与原档不动）+ 第 227、234 行删 `rng=` 关键字；行尾保持与原档一致的 CRLF；其余 364 行逐位一致。
+- 独立验证：从空白目录以仓库 src 为 PYTHONPATH 实跑修复版，复现 §5.6.1 v55 数（67 笔 / −$99,479.66 / DD 0.4727，其余 9 名 agent 0 交易），与评估报告的 scratch 复现一致。
+- 说明：评估清单里的 `phase2_followup/README.md` 在仓库中不存在，文档注改为修复版文件头注释 + 本条 CHANGELOG，不另建文档。MANIFEST 与 dao 同步待另行批准。
