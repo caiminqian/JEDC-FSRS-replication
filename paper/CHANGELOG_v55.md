@@ -198,3 +198,10 @@
 - G4 研究完成（phase2_followup/g4/g4_report.md，三臂拟合 + 多起点 profile 复核）：G4 定义（峰值 [15,25)、比值 ≥1.3、45 天隔离、120 观测窗；780 天窗口 0/35 干净故否决），主臂 5 事件 + 储备 5；自由拟合梯级 {G1 0.1, G2 0.27, G3 0.45, G4 0.1}（G4 贴 floor 且非单调）；单调公式硬套四档时全部贴 floor（Stage 1 无 G4 时只塌 G1/G2，G3 0.332；60 窗敏感臂一致）；Stage 1 核 holdout 预测 S_post_G4=1.33，实际 1–3 天减半（模拟 29 天），平均 loss 0.3705（对 Stage 1 主拟合 0.0591，约 6.3 倍），单调梯子外推被拒绝；核本身在自由 rung 下拟合良好（单 loss 0.014–0.040）。
 - 稿改动：新增限制 26（G4 档梯子失效 + 核本身在自由 rung 下拟合良好 + S0* 仍不可识别 + 公式 vs 映射解读边界）；限制 19、结论等其余部分不动；S0*/k 结论不受影响。
 - 复核：pi 复核 PASS（报告 g4/g4_recheck_report.md），但其第 3 项证据不成立（极值归属错、分母混用、G4b 数字系 G4a 复制），adjudicate 后由主 agent 独立复算替代（跨度 G4a 26.70%、G4b 33.45%；2007-03-05 窗口复核），报告数字全部站住。稿未同步（同步需另批）。
+
+## 29. Tier 1 披露：Arm 1 准入翻转 + Arm 2 重设计 + clamp 补充（2026-10-27，用户批准）
+
+- Arm 1：peak > floor 准入（限制 24 早已要求）应用于同一批 13 峰，只排除 2022-12-12；准入 12/12 gate 全过，均值 0.1206→0.0649，verdict 在修正规则下 FAIL→PASS；13 事件预注册 FAIL 原文保留作审计记录。稿改动：摘要 §5.9 句、§5.9 Arm 1 标题与新增修正段、限制 24 补充、限制 5 与结论回声句同步。
+- Arm 2：五规则重跑（orig/A1/A2/B/A2B），准入胜 0/12、7/12、5/12、0/12、6/12，全 FAIL；A1 的 7/12 系退化空 shock（窗内无 |Δ|≥2 变化），不得读作多 shock 验证；B final S 膨胀 10–468；orig 唯一胜场正是 degenerate 事件（干净事件 0/12）。稿改动：§5.9 Arm 2 新增重设计段、限制 25 补充；轨迹 claim 仍不支持。
+- clamp：0.1 精确平坦确是 clamp artifact，但 0.01 下仍精确平坦、1e-6 下跨度仅 1.42%，S0* 至多弱识别；Step A/B 最优解在 0.01 以下相同，G4 结论不依赖 clamp。稿改动：限制 19 补充。
+- 脚本与产物：backtest_v2.py、backtest_v2_results.json、phase2_followup/g4/g4_clamp.py（+supp）、g4_clamp_results.json、g4_clamp_supp.log、tier1_report.md；pi 复核 NEEDS_WORK 经 adjudicate 驳回（除补充轮数字未落文件已补存外，其余 FAIL 全系误读），报告数字全部站住。稿未同步（同步需另批）。
