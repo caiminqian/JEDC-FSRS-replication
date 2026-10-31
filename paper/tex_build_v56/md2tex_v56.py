@@ -483,8 +483,8 @@ def main():
     out.append('')
     out.append('\\title{%s}' % inline(title, allow_path=False))
     out.append('\\author{MinQian Cai}')
-    out.append('\\date{Submitted to \\textit{Journal of Economic Dynamics '
-               'and Control}\\\\Draft: 2026-10-31 (v55)}')
+    out.append('\\date{Submitted to \\textit{Journal of Economic Interaction and Coordination} '
+               '\\\\Draft: 2026-11-01 (v55)}')
     out.append('')
     out.append('\\begin{document}')
     out.append('\\maketitle')

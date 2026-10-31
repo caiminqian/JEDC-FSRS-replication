@@ -1,7 +1,7 @@
 # Long Memory in Agent-Based Markets: FSRS Power-Law Forgetting vs Ebbinghaus Decay, and Why Control Fails to Bite
 
 **Authors**: MinQian Cai  
-**Target Journal**: *Journal of Economic Dynamics and Control* (JEDC)  
+**Target Journal**: *Journal of Economic Interaction and Coordination* (JEIC)  
 **Submission Date**: v55 draft, 2026-10-26 (v43, v44, v45, v46, v47, v48, v49, v50, v51, v52, v53 and v54 preserved unchanged for provenance)
 **Word Count**: 19166 (wc -w, including headings and tables; v54 was 17321)
 

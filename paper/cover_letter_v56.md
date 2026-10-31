@@ -1,14 +1,14 @@
-# Cover Letter for JEDC Submission (v56 finalized — not sent)
+# Cover Letter for JEIC Submission (v56 retargeted — not sent)
 
-**Date**: 2026-10-31
-**To**: Editor, *Journal of Economic Dynamics and Control*
+**Date**: 2026-11-01
+**To**: Editor, *Journal of Economic Interaction and Coordination*
 **From**: MinQian Cai
 **Title**: "Long Memory in Agent-Based Markets: FSRS Power-Law Forgetting vs Ebbinghaus Decay, and Why Control Fails to Bite"
 **Type**: Research Article
 
 Dear Editor,
 
-We submit our manuscript for consideration as a research article in the *Journal of Economic Dynamics and Control*. The paper's central claim is a contest over the functional form of memory, not a controller: in agent-based markets, a power-law forgetting kernel (FSRS) beats the classical exponential forgetting curve (Ebbinghaus, EE) at reproducing how long markets remember crises — and that kernel choice, rather than any policy lever, decides the dynamics that follow.
+We submit our manuscript for consideration as a research article in the *Journal of Economic Interaction and Coordination*. The manuscript fits the journal's remit: an artificial-market model with heterogeneous agents, tested against volatility stylized facts and long memory, with cross-market validation. The paper's central claim is a contest over the functional form of memory, not a controller: in agent-based markets, a power-law forgetting kernel (FSRS) beats the classical exponential forgetting curve (Ebbinghaus, EE) at reproducing how long markets remember crises — and that kernel choice, rather than any policy lever, decides the dynamics that follow.
 
 **The contest, in one paragraph**: in a head-to-head 100-agent comparison over 500 ticks, FSRS retrievability at tick 500 is approximately 47,000 times EE's (R(500) = 0.7185 vs 0.000015). Under a second, heterogeneity-adjusted caliber the gap narrows to 5.4 times (tier T2 for the lognormal and two-point distributions, T3 for the uniform distribution); both calibers are reported side by side, not as competing estimates. The same kernel that wins the persistence contest is then shown to defeat control: two control probes (PPO reinforcement learning and grid search over intervention parameters) both return negative results, because under the recalibrated FSRS kernel the intervention thresholds never trigger. The paper's implication is therefore about model choice first — memory kernels, not policy levers, decide how long markets remember — and about the limits of control in a long-memory regime second.
 
