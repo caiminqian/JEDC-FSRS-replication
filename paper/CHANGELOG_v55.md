@@ -205,3 +205,15 @@
 - Arm 2：五规则重跑（orig/A1/A2/B/A2B），准入胜 0/12、7/12、5/12、0/12、6/12，全 FAIL；A1 的 7/12 系退化空 shock（窗内无 |Δ|≥2 变化），不得读作多 shock 验证；B final S 膨胀 10–468；orig 唯一胜场正是 degenerate 事件（干净事件 0/12）。稿改动：§5.9 Arm 2 新增重设计段、限制 25 补充；轨迹 claim 仍不支持。
 - clamp：0.1 精确平坦确是 clamp artifact，但 0.01 下仍精确平坦、1e-6 下跨度仅 1.42%，S0* 至多弱识别；Step A/B 最优解在 0.01 以下相同，G4 结论不依赖 clamp。稿改动：限制 19 补充。
 - 脚本与产物：backtest_v2.py、backtest_v2_results.json、phase2_followup/g4/g4_clamp.py（+supp）、g4_clamp_results.json、g4_clamp_supp.log、tier1_report.md；pi 复核 NEEDS_WORK 经 adjudicate 驳回（除补充轮数字未落文件已补存外，其余 FAIL 全系误读），报告数字全部站住。稿未同步（同步需另批）。
+## 30. Tier 2 披露：集合识别 + 双参考 + 跨市场（2026-10-27，用户批准）
+
+- 稳健报告：17 集与 22 集上 δ=1%/5%/10% 的 S0* 识别集均为整个采样网格 [0.3, 2.0]（k ∈ [1.67, 11.11]）；描述性识别集（MSE 损失，无名义覆盖率）。分工：17 集 G3 档 0.332 精确不变、G1 档贴 floor、G2 档 0.1–0.1422；22 集全档贴 floor。稿改动：限制 19 补充集合识别段。
+- 双参考：log-VIX 不打破岭（跨度 0.6464% 对 level 0.11%，δ=1% 仍全网格），拟合差 32%（跨尺度同步骤）；level 构造站得住；已实现波动率第三参考不追。稿改动：限制 19 补充。
+- 跨市场：VXN 71 / GVZ 28 / OVX 98 自动族，profile 跨度 0.0005%/0.0000%/0.0149%，δ-集全网格——岭跨市场普适；梯子不跨市场定量迁移（G3：VIX 0.332、OVX 0.27–0.29、VXN/GVZ 全贴 floor；w20 0.155–0.305）；拟合水平受精选 vs 自动扫描混杂，不作干净比较。稿改动：限制 19 补充 + 限制 24/25 各补跨市场句；可复现行补 Tier 2 产物路径。
+- 脚本与产物：phase2_followup/tier2/tier2_item1.py（+results）、tier2_item2.py（+results）、tier2_item3.py（+results、+log）、vxncls.csv、gvzcls.csv、ovxcls.csv、tier2_report.md；pi 复核 NEEDS_WORK 经 adjudicate 驳回（32% 比较基准误读；days_ref 复核行混列），仅一处措辞澄清，报告 PASS。稿未同步（同步需另批）。
+## 31. 外部矩 v9 实施 + 步骤 8 多冲击验证并入稿子（2026-10-31，用户批准仅并入稿+CHANGELOG）
+
+- 步骤 1–7 最终报告并入：限制 27 新增（A 路主 span 22.53% 破裂带、null AND 6 组合全不成立、argmin 端点 2.0 → “边界偏好，非识别”；C lag-5 flag 仅诊断；标签 CONDITIONAL、无识别结论；9 项封顶；双脊不可执行；v10 债务照单 carried）。稿改动：限制 27 新增 + 限制 25 补步骤 8 指向句 + §5.9 可复现行补步骤 8 句。
+- 步骤 8 并入：限制 27 同条含步骤 8（v3 冻结方案、四路复核实施 PASS / 报告 NEEDS_WORK / 修补批已完成；E=10、E0=2026-03-27、M=2026-03-06；vs 闭式 +0.295725、vs 重初始化基线 −0.064158（BCa 上界 +0.004923 落 ±0.01 带）；置换 p=0.0010；结论 BORDERLINE，三触发：带内 + 功效封顶（需 23、实 10）+ clip≤50% 行符号翻转；ΔMSE 同号；5 高 clip 事件驱动；固定表述与“优势未证实、非引擎无效”阴性措辞；不改 CONDITIONAL 标签与 9 项封顶）。
+- 全记录：phase2_followup/em_impl/final_report.md（含步骤 8 附录）、phase2_followup/em_impl/multishock/multishock_report.md（含修补批附录）。稿未同步、未推 GitHub、未同步 dao（同步需另批）。
+
